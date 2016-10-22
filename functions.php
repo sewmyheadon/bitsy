@@ -115,6 +115,11 @@ function bitsy_scripts() {
 add_action( 'wp_enqueue_scripts', 'bitsy_scripts' );
 
 /**
+ * Load the theme wrapper.
+ */
+require get_template_directory() . '/inc/theme-wrapper.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

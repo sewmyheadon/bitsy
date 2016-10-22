@@ -1,7 +1,7 @@
 === bitsy ===
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+Contributors: sewmyheadon, ivycat, automattic
+Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, performance optimized
 
 Requires at least: 4.0
 Tested up to: 4.5.3
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called bitsy, or underscores.
+A simple optimized starter theme called bitsy based on skel.io and underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called bitsy, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+My sexy description will inevitably go here.
 
 == Installation ==
 
@@ -25,14 +25,17 @@ Hi. I'm a starter theme called bitsy, or underscores, if you like. I'm a theme m
 
 = Does this theme support any plugins? =
 
-bitsy includes support for Infinite Scroll in Jetpack.
+bitsy includes support for
+- Infinite Scroll in Jetpack.
+- Gravity Forms
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - Oct 22 2016 =
 * Initial release
 
 == Credits ==
 
+* Based on Skel http://skel.io/, (C) 2016 skel.io, [MIT](https://opensource.org/licenses/MIT)
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
