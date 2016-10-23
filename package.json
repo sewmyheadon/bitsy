@@ -1,0 +1,22 @@
+{
+  "name": "ericamundson",
+  "version": "1.0.0",
+  "description": "Theme for ericamundson dot org",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sewmyheadon/dev-ericamundson-org"
+  },
+  "keywords": [
+    "Sass"
+  ],
+  "author": "IvyCat",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-compass": "~1.1.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
