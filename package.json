@@ -1,7 +1,8 @@
 {
   "name": "bitsy",
   "version": "1.0.0",
-  "description": "Bitsy is a lightweight, powerful WordPress theme based on _s and skel",
+  "description": "bitsy is a lightweight, hot-rod of a WordPress theme based on _s and skel",
+  "license": "GPLv2",
   "main": "index.php",
   "repository": {
     "type": "git",
@@ -11,12 +12,19 @@
     "Sass"
   ],
   "author": "IvyCat",
-  "license": "ISC",
+  "person":{ 
+    "name" : "Eric Amundson",
+    "email" : "eric@ivycat.com",
+    "url" : "https://ivycat.com/"
+  },
+
   "devDependencies": {
     "grunt": "^1.0.0",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-contrib-compass": "~1.1.1",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0"
   }
 }
