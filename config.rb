@@ -1,7 +1,7 @@
 css_dir = 'assets/css'
-sass_dir = 'assets/sass'
-javascripts_dir = 'assets/js'
-images_dir = 'assets/images'
-output_style = :nested
 fonts_dir = 'assets/fonts'
+images_dir = 'assets/images'
+javascripts_dir = 'assets/js'
+sass_dir = 'assets/sass'
+output_style = :nested
 relative_assets = true
