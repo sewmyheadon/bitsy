@@ -41,9 +41,9 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'assets/js/build/vendor.min.js': [
-                        'assets/js/vendor/skel/skel.js',
-                        'assets/js/vendor/skel/skel-viewport.js',
-                        'assets/js/vendor/skel/skel-layout.js'
+                        'assets/js/vendor/skel/skel.min.js',
+                        'assets/js/vendor/skel/skel-viewport.min.js',
+                        'assets/js/vendor/skel/skel-layout.min.js'
                     ],
                     'assets/js/build/bitsy.min.js': [
                         'assets/js/source/customizer.js',
