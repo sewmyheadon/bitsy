@@ -25,7 +25,6 @@ bitsy is based on:
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
 # Typography
 # Elements
 # Forms
@@ -45,19 +44,16 @@ bitsy is based on:
 	## Galleries
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
+@import "../vendor/skel";
+
 @import "mixins/mixins-master";
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-// Temp comment out until proven needed
-// @import "normalize";
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-// @import "typography/typography";
+@import "typography/typography";
 
 /*--------------------------------------------------------------
 # Elements
@@ -69,7 +65,7 @@ bitsy is based on:
 # Forms
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-// @import "forms/forms";
+@import "forms/forms";
 
 /*--------------------------------------------------------------
 # Navigation
