@@ -25,10 +25,12 @@
 # -----------------------------------------------------------------
 
 # ignore all files starting with .
-# .*
+.*
 
 # track this file .gitignore (i.e. do NOT ignore it)
 !.gitignore
+!.jscrsc
+!.jshintignore
 
 # track .editorconfig file (i.e. do NOT ignore it)
 !.editorconfig
@@ -75,3 +77,4 @@ php_errorlog
 
 # ignore node/grunt dependency directories
 node_modules/
+.sass-cache/
