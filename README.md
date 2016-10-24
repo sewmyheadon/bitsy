@@ -15,6 +15,8 @@ A simple optimized starter theme called bitsy based on skel.io and underscores.
 
 Bitsy is a simple, optimized starter theme based on underscores and skel, with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
+Bitsy includes support for Grunt to start with a slim, trim, optimized theme with which o
+
 ## Installation ##
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
@@ -22,6 +24,10 @@ Bitsy is a simple, optimized starter theme based on underscores and skel, with a
 3. Click Activate to use your new theme right away.
 
 ## Frequently Asked Questions ##
+
+### There are a thousand good themes out there, why build another? ###
+
+To learn and be lean.
 
 ### Does this theme support any plugins? ###
 

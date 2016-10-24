@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         // watch our project for changes
         watch: {
             php: {
-                files: ['**.php', 'template-parts/**.php']
+                files: ['**.php', 'template-parts/**.php', 'inc/**.php']
             }, // php
             compass: {
                 files: [
