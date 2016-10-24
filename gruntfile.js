@@ -46,6 +46,7 @@ module.exports = function(grunt) {
                         'assets/js/vendor/skel/skel-layout.min.js'
                     ],
                     'assets/js/build/bitsy.min.js': [
+                        'assets/js/source/custom.js',
                         'assets/js/source/customizer.js',
                         'assets/js/source/navigation.js',
                         'assets/js/source/skip-link-focus-fix.js'
