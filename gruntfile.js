@@ -105,7 +105,7 @@ module.exports = function(grunt) {
 
     // register task
     grunt.registerTask('default', [
-        //'jshint',
+        'jshint',
         'compass',
         'uglify',
         'watch'
