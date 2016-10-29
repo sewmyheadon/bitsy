@@ -20,36 +20,33 @@
 </head>
 
 <body id="top" <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a>
 
-	<header id="header" class="site-header container" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
+	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a> -->
+	<header id="header">
+		<?php
+			if ( is_front_page() || is_home() ) : ?>
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<?php else : ?>
+			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+		<?php
+		endif; ?>
+		<?php $description = get_bloginfo( 'description', 'display' );
+		if ( $description || is_customize_preview() ) : ?>
+			<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
+		<?php
+		endif; ?>
+		<?php wp_loginout(); ?>
+		<a href="#nav">Menu</a>
 	</header><!-- #header -->
 
-	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<nav id="nav" class="main-navigation" role="navigation">
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bitsy' ); ?></button>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 	</nav><!-- #site-navigation -->
 	
 	<section id="banner">
-		<h2>Hi, I'm Baseline</h2>
-		<p>A super simple starting point for projects based on <a href="http://skel.io">Skel</a>.</p>
+		<h2>Hi, I'm Bitsy</h2>
+		<p>A super simple starting point for projects based on <a href="http://skel.io">Skel</a> &amp; <a href="http://underscores.me">_s</a>.</p>
 		<ul class="actions">
 			<li><a href="#content" class="button special">Content</a></li>
 			<li><a href="#elements" class="button">Elements</a></li>
