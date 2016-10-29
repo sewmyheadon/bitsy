@@ -102,7 +102,7 @@ add_action( 'widgets_init', 'bitsy_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bitsy_scripts() {
-	wp_enqueue_style( 'bitsy-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'bitsy-style', get_stylesheet_directory_uri().'/assets/sass/build/style.css' );
 
 	wp_enqueue_script( 'bitsy-navigation', get_template_directory_uri() . '/assets/js/source/navigation.js', array(), '20151215', true );
 

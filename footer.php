@@ -13,13 +13,19 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bitsy' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'bitsy' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bitsy' ), 'bitsy', '<a href="https://ivycat.com" rel="designer">Eric Amundson</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer id="footer" class="site-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="site-info">
+				<span class="sep"> | </span>
+				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bitsy' ), 'bitsy', '<a href="https://ivycat.com" rel="designer">Eric Amundson</a>' ); ?>
+			</div><!-- .site-info -->
+			
+			<div class="copyright">
+				&copy; Untitled. All rights reserved.
+			</div>
+		</div>
+	</footer><!-- #footer -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
