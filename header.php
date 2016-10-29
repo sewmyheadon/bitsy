@@ -19,11 +19,11 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="top" <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a>
 
-	<header id="masthead" class="site-header container" role="banner">
+	<header id="header" class="site-header container" role="banner">
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -40,10 +40,21 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bitsy' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+	</header><!-- #header -->
 
-	<div id="content" class="site-content container">
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bitsy' ); ?></button>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+	</nav><!-- #site-navigation -->
+	
+	<section id="banner">
+		<h2>Hi, I'm Baseline</h2>
+		<p>A super simple starting point for projects based on <a href="http://skel.io">Skel</a>.</p>
+		<ul class="actions">
+			<li><a href="#content" class="button special">Content</a></li>
+			<li><a href="#elements" class="button">Elements</a></li>
+			<li><a href="#grid" class="button alt">Grid System</a></li>
+		</ul>
+	</section>
+
+	<div id="main" class="site-content container">
