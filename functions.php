@@ -2,6 +2,24 @@
 /**
  * bitsy functions and definitions.
  *
+ * Set up the theme and provides some helper functions, which are used in the
+ * theme as custom template tags. Others are attached to action and filter
+ * hooks in WordPress to change core functionality.
+ *
+ * When using a child theme you can override certain functions (those wrapped
+ * in a function_exists() call) by defining them first in your child theme's
+ * functions.php file. The child theme's functions.php file is included before
+ * the parent theme's file, so the child theme functions would be used.
+ *
+ * @link https://codex.wordpress.org/Theme_Development
+ * @link https://codex.wordpress.org/Child_Themes
+ *
+ * Functions that are not pluggable (not wrapped in function_exists()) are
+ * instead attached to a filter or action hook.
+ *
+ * For more information on hooks, actions, and filters,
+ * {@link https://codex.wordpress.org/Plugin_API}
+ * 
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package bitsy
@@ -45,6 +63,7 @@ function bitsy_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'bitsy' ),
+		'social'  => __( 'Social Links Menu', 'bitsy' )
 	) );
 
 	/*
@@ -64,8 +83,33 @@ function bitsy_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	/*
+	 * Enable support for Post Formats.
+	 *
+	 * See: https://codex.wordpress.org/Post_Formats
+	 */
+	add_theme_support( 'post-formats', array(
+		'aside',
+		'image',
+		'video',
+		'quote',
+		'link',
+		'gallery',
+		'status',
+		'audio',
+		'chat',
+	) );
+	/*
+	 * This theme styles the visual editor to resemble the theme style,
+	 * specifically font, colors, icons, and column width.
+	 */
+	//add_editor_style( array( 'css/editor-style.css', bitsy_fonts_url() ) );
+
+	// Indicate widget sidebars can use selective refresh in the Customizer.
+	add_theme_support( 'customize-selective-refresh-widgets' );
 }
-endif;
+endif; // bitsy_setup
 add_action( 'after_setup_theme', 'bitsy_setup' );
 
 /**
@@ -101,12 +145,13 @@ add_action( 'widgets_init', 'bitsy_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function bitsy_scripts() {
+function bitsy_scripts() {	
+
+	wp_enqueue_script( 'bitsy-vendorjs', get_template_directory_uri() . '/assets/js/build/vendor.min.js', array(), '20151215', true );
 	wp_enqueue_style( 'bitsy-style', get_stylesheet_directory_uri().'/assets/sass/build/style.css' );
-
 	wp_enqueue_script( 'bitsy-navigation', get_template_directory_uri() . '/assets/js/source/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'bitsy-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/source/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'bitsy-js', get_template_directory_uri() . '/assets/js/build/bitsy.min.js', array('jquery'), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
