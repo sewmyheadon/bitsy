@@ -78,3 +78,6 @@ php_errorlog
 # ignore node/grunt dependency directories
 node_modules/
 .sass-cache/
+
+# ignore artwork directory
+artwork/
