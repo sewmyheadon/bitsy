@@ -14,12 +14,10 @@
 
 get_header( bitsy_template_base() ); ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area" role="main">
 
-		<?php include bitsy_template_path(); ?>
+	<?php include bitsy_template_path(); ?>
 
-	</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php
