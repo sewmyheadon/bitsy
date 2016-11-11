@@ -54,4 +54,4 @@
 		</ul>
 	</section>
 
-	<div id="main" class="site-content container">
+	<div id="main" class="site-content container" role="main">
