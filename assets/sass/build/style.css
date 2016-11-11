@@ -2404,7 +2404,8 @@ body {
   width: 100%;
   z-index: 10001;
 }
-#header > h1 {
+#header > h1,
+#header > p {
   color: #ffffff;
   display: inline-block;
   height: inherit;
@@ -2415,8 +2416,12 @@ body {
   position: absolute;
   top: 0;
 }
-#header > h1 a {
+#header > h1 a,
+#header > p a {
+  font-weight: normal;
   font-size: 1.25em;
+  color: inherit;
+  text-decoration: none;
 }
 #header > a {
   -moz-transition: color 0.2s ease-in-out;
@@ -2664,7 +2669,7 @@ body {
 #footer .copyright {
   color: #bbb;
   font-size: 0.9em;
-  margin: 0 0 2em 0;
+  margin: 2em 0 0;
   padding: 0;
   text-align: center;
 }
