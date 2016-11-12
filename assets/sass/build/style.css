@@ -1767,6 +1767,7 @@ label {
 }
 
 input[type="text"],
+input[type="search"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
@@ -1788,6 +1789,7 @@ textarea {
   width: 100%;
 }
 input[type="text"]:invalid,
+input[type="search"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
 input[type="tel"]:invalid,
@@ -1796,6 +1798,7 @@ textarea:invalid {
   box-shadow: none;
 }
 input[type="text"]:focus,
+input[type="search"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -1835,7 +1838,7 @@ textarea:focus {
   display: none;
 }
 
-input[type="text"],
+input[type="text"], input[type="search"],
 input[type="password"],
 input[type="email"],
 select {
