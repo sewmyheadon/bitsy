@@ -1,5 +1,11 @@
 // skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
 
+	// Ensures page width is always >=320px.
+		@include breakpoint(xsmall) {
+			html, body {
+				min-width: 320px;
+			}
+		}
 /* Main */
 
 	#main {

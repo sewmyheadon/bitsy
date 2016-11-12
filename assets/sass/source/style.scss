@@ -1,14 +1,14 @@
 /*!
 Theme Name: bitsy
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/sewmyheadon/bitsy
 Author: Eric Amundson
 Author URI: https://ivycat.com
 Description: A lightweight theme based on underscores.me and skel.io
-Version: 1.0.0
+Version: 0.9.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bitsy
-Tags:
+Tags: starter theme, skel
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -45,9 +45,8 @@ bitsy is based on:
 --------------------------------------------------------------*/
 @import 'variables-site/variables-site';
 @import '../vendor/skel';
-@import 'libs/vars';
 @import 'libs/functions';
-@import 'libs/mixins';
+@import "libs/mixins";
 @import 'libs/skel';
 @import '../vendor/font-awesome.min.css';
 
@@ -84,73 +83,44 @@ bitsy is based on:
 // Base.
 
 	@import 'base/page';
-	@import 'base/typography';
 
-// Component.
 
-	@import 'components/section';
-	@import 'components/form';
-	@import 'components/box';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/table';
-	@import 'components/button';
-	@import 'components/grid-demo';
-
-// Layout.
-
-	@import 'layout/header';
-	@import 'layout/nav';
-	@import 'layout/banner';
-	@import 'layout/main';
-	@import 'layout/footer';
-
-	
-	@import "mixins/mixins-master";
-
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+// Temp comment out until proven needed
+@import "layout/layout";
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-//@import "typography/typography";
+@import "typography/typography";
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-// @import "elements/elements";
+@import "elements/elements";
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-//@import "forms/forms";
+@import "forms/forms";
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-// @import "navigation/navigation";
+@import "navigation/navigation";
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-// @import "modules/accessibility";
+@import "modules/accessibility";
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-// Temp comment out until proven needed
-// @import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-// Temp comment out until proven needed
-// @import "modules/clearings";
 
 /*--------------------------------------------------------------
 # Widgets
@@ -166,10 +136,10 @@ bitsy is based on:
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
-// @import "modules/infinite-scroll";
+@import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 // Temp comment out until proven needed
-// @import "media/media";
+@import "media/media";

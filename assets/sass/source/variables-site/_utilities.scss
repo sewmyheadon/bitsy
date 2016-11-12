@@ -1,0 +1,20 @@
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		nav:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		4px,
+		border-width:		1px,
+		element-height:		2.75em,
+		element-margin:		2em
+	);
