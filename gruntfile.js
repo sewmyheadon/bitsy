@@ -60,14 +60,14 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
-                    sassDir: 'assets/sass/source',
-                    cssDir: 'assets/sass/build',
+                    sassDir: 'assets/sass',
+                    cssDir: './',
                     imagesDir: 'assets/images',
                     images: 'images',
                     javascriptsDir: 'assets/js/build',
                     fontsDir: 'assets/fonts',
                     environment: 'production',
-                    outputStyle: 'expanded',
+                    outputStyle: 'expanded', // switch to 'compressed' for minification
                     relativeAssets: true,
                     noLineComments: true,
                     force: true
@@ -82,10 +82,8 @@ module.exports = function(grunt) {
             }, // php
             compass: {
                 files: [
-                    'assets/sass/source/*',
-                    'assets/sass/source/**/*',
-                    'assets/sass/vendor/*',
-                    'assets/sass/vendor/**/*'
+                    'assets/sass/*',
+                    'assets/sass/**/*',
                 ],
                 tasks: ['compass']
             },

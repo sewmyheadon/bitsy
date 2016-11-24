@@ -148,7 +148,7 @@ add_action( 'widgets_init', 'bitsy_widgets_init' );
 function bitsy_scripts() {	
 
 	wp_enqueue_script( 'bitsy-vendorjs', get_template_directory_uri() . '/assets/js/build/vendor.min.js', array(), '20151215', true );
-	wp_enqueue_style( 'bitsy-style', get_stylesheet_directory_uri().'/assets/sass/build/style.css' );
+	wp_enqueue_style( 'bitsy-style', get_stylesheet_directory_uri().'/style.css' );
 	wp_enqueue_script( 'bitsy-navigation', get_template_directory_uri() . '/assets/js/source/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'bitsy-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/source/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'bitsy-js', get_template_directory_uri() . '/assets/js/build/bitsy.min.js', array('jquery'), '20151215', true );
