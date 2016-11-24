@@ -22,7 +22,7 @@ if ( have_posts() ) : ?>
 		 * If you want to overload this in a child theme then include a file
 		 * called content-search.php and that will be used instead.
 		 */
-		get_template_part( 'template-parts/content', 'search' );
+		get_template_part( 'components/post/content', 'search' );
 
 	endwhile;
 
@@ -30,6 +30,6 @@ if ( have_posts() ) : ?>
 
 else :
 
-	get_template_part( 'template-parts/content', 'none' );
+	get_template_part( 'components/post/content', 'none' );
 
 endif;

@@ -39,19 +39,8 @@
 		<a href="#nav">Menu</a>
 	</header><!-- #header -->
 
-	<nav id="nav" class="main-navigation" role="navigation">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_id' => 'primary-menu','menu_class' => 'links','container' => 'false','depth' => '1' ) ); ?>
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bitsy' ); ?></button>
-	</nav><!-- #site-navigation -->
-	
-	<section id="banner">
-		<h2>Hi, I'm Bitsy</h2>
-		<p>A super simple starting point for projects based on <a href="http://skel.io">Skel</a> &amp; <a href="http://underscores.me">_s</a>.</p>
-		<ul class="actions">
-			<li><a href="#content" class="button special">Content</a></li>
-			<li><a href="#elements" class="button">Elements</a></li>
-			<li><a href="#grid" class="button alt">Grid System</a></li>
-		</ul>
-	</section>
+	<?php get_template_part( 'components/navigation/navigation', 'primary' ); ?>
+
+	<?php if( is_front_page()) { get_template_part( 'components/header/banner', 'hero' ); } ?>
 
 	<div id="main" class="site-content container" role="main">
