@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.8.0
-Stable tag: 0.8.1
+Stable tag: 0.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,7 +41,7 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 == Changelog ==
 
-= 0.8.1 - Jul 2 2017 =
+= 0.9.2 - Jul 2 2017 =
 * Minor docs updates - give credit to Baseline, linkify inspirational projects
 
 = 0.8 - Nov 5 2016 =
