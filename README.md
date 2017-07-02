@@ -5,15 +5,15 @@
 
 **Requires at least:** 4.0  
 **Tested up to:** 4.5.3  
-**Stable tag:** 0.8.0  
+**Stable tag:** 0.8.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-Bitsy is a slim, optimized starter theme based on skel.io and underscores.me.
+Bitsy is a slim, optimized starter theme based on [skel.io](https://github.com/ajlkn/skel) and [underscores (_s)](http://underscores.me), and [baseline](https://github.com/ajlkn/baseline).
 
 ## Description ##
 
-Bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/) and [skel](http://skel.io/), with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/) and [skel](http://skel.io/), with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and some basic styles from [baseline](https://github.com/ajlkn/baseline).
 
 Bitsy includes support for Grunt to help you compile and optimize SASS, JS, and more.
 
@@ -40,6 +40,9 @@ bitsy currently includes support for:
 Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in the [Bitsy GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 ## Changelog ##
+
+### 0.8.1 - Jul 2 2017 ###
+* Minor docs update to give credit where it's due.
 
 ### 0.8 - Nov 5 2016 ###
 * Initial release
