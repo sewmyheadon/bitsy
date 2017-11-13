@@ -23,6 +23,18 @@ Bitsy includes support for Grunt to help you compile and optimize SASS, JS, and 
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+## Development ##
+
+This theme has built-in Grunt support that is configured to compile SASS using Compass, Lint and Uglify JavaScript, and do some other stuff.
+
+To set up this theme so you can develop using Grunt support, do the following:
+
+1. Clone or download the theme to your theme directory.
+2. Make sure you have Node and npm installed.
+3. Open Terminal and `cd` into the theme directory
+4. Run `npm install` which will install all of the packages needed to automate your dev process.
+5. Run Grunt. Run `grunt dist` to get ready for production or `grunt default` to initiate grunt watch and format your CSS for dev.
+
 ## Frequently Asked Questions ##
 
 ### There are a thousand good themes out there, why build another? ###
