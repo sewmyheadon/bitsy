@@ -53,6 +53,9 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 ## Changelog ##
 
+### 0.9.3 - Nov 13 2017 ###
+* Minor docs update to help developers get started with Grunt.
+
 ### 0.8.1 - Jul 2 2017 ###
 * Minor docs update to give credit where it's due.
 
