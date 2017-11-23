@@ -9,6 +9,8 @@
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
+
 Bitsy is a slim, optimized starter theme based on [skel.io](https://github.com/ajlkn/skel) and [underscores (_s)](http://underscores.me), and [baseline](https://github.com/ajlkn/baseline).
 
 ## Description ##
