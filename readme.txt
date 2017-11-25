@@ -4,8 +4,8 @@ Contributors: sewmyheadon, ivycat
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, performance optimized
 
 Requires at least: 4.0
-Tested up to: 4.8.0
-Stable tag: 0.9.2
+Tested up to: 4.9.0
+Stable tag: 0.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ bitsy currently includes support for:
 Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in the [Bitsy GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 == Changelog ==
+
+= 0.9.5 - Nov 24 2017 =
+* Add WooCommerce support. Update to current _s.
 
 = 0.9.2 - Jul 2 2017 =
 * Minor docs updates - give credit to Baseline, linkify inspirational projects
