@@ -5,23 +5,42 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.9.0
-Stable tag: 0.9.5
+Stable tag: 0.9.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Bitsy is a slim, optimized starter theme based on skel.io and underscores.me.
+bitsy is a slim, optimized starter theme based on skel.io and underscores.me.
 
 == Description ==
 
-Bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/) and [skel](http://skel.io/), with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/), [Skel](http://skel.io/), and [Baseline](https://github.com/ajlkn/baseline) with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
-Bitsy includes support for Grunt to help you compile and optimize SASS, JS, and more.
+bitsy includes support for Grunt to help you compile and optimize SASS, JS, update your readme.md file, and more.
 
 == Installation ==
+
+Either upload the zip file through the WordPress Admin, or use git to clone the theme into you _themes_ directory.
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
+
+### Development
+Since bitsy is a starter theme, chances are you're going to continue theme development using bitsy as a basis.
+
+While you don't have to use it, bitsy's all set up with Grunt to do the following:
+- Compile SASS using Compass
+- Test our JS
+- Concatenate JS
+- Copy your readme.txt to a readme.md file for GitHub or other git hosts.
+
+#### Prerequisites ####
+- Install or update [Node and npm](https://nodejs.org/en/download/).
+- Control any command-line fear.
+
+#### Install Dependencies ####
+Once Node and npm are installed and you've got the theme in the right place, you'll want to use the command line to `cd`
+into the theme directory and run `npm install`, which will pull in all of the required theme automation packages.
 
 == Frequently Asked Questions ==
 
@@ -34,12 +53,16 @@ To learn and be lean.
 bitsy currently includes support for:
 
 - Infinite Scroll in Jetpack.
+- WooCommerce
 
 = Can I contribute? =
 
-Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in the [Bitsy GitHub repo](https://github.com/sewmyheadon/bitsy).
+Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in the [bitsy GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 == Changelog ==
+
+= 0.9.6 - Nov 25 2017 =
+* Update readme files to document Grunt.
 
 = 0.9.5 - Nov 24 2017 =
 * Add WooCommerce support. Update to current _s.
@@ -59,6 +82,7 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 == Credits ==
 
-* Based on Skel http://skel.io/, (C) 2016 skel.io, [MIT](https://opensource.org/licenses/MIT)
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Skel http://skel.io/, (C) 2016 skel.io, [MIT](https://opensource.org/licenses/MIT)
+* Baseline https://github.com/ajlkn/baseline, (C) 2016 n33, [MIT](https://opensource.org/licenses/MIT)
+* Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
