@@ -43,9 +43,16 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 = 0.9.5 - Nov 24 2017 =
 * Add WooCommerce support. Update to current _s.
+* Add hooks for header, content, and footer classes.
+
+= 0.9.3 - Nov 13 2017 =
+* Minor docs update to help developers get started with Grunt.
 
 = 0.9.2 - Jul 2 2017 =
 * Minor docs updates - give credit to Baseline, linkify inspirational projects
+
+= 0.8.1 - Jul 2 2017 =
+* Minor docs update to give credit where it's due.
 
 = 0.8 - Nov 5 2016 =
 * Initial release

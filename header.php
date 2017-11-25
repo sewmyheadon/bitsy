@@ -22,8 +22,9 @@
 <body id="top" <?php body_class(); ?>>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a>
-	<header id="header">
-		<?php
+	<header id="header" class="<?php bitsy_header_class(); ?>">
+
+        <?php
 			if ( is_front_page() || is_home() ) : ?>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php else : ?>
@@ -43,4 +44,4 @@
 
 	<?php if( is_front_page()) { get_template_part( 'components/header/banner', 'hero' ); } ?>
 
-	<div id="main" class="site-content container" role="main">
+	<div id="main" class="site-content container <?php bitsy_content_class(); ?>" role="main">
