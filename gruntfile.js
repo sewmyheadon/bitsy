@@ -74,7 +74,13 @@ module.exports = function(grunt) {
                 }
             }
         },
-
+	    wp_readme_to_markdown: {
+		    readme: {
+			    files: {
+				    'README.md': 'readme.txt'
+			    }
+		    }
+	    },
         // watch our project for changes
         watch: {
             php: {
@@ -101,13 +107,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-wp-readme-to-markdown');
 
     // register task
     grunt.registerTask('default', [
         'jshint',
         'compass',
         'uglify',
+	    'wp_readme_to_markdown',
         'watch'
     ]);
 
