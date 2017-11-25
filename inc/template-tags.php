@@ -63,7 +63,7 @@ if ( ! function_exists( 'bitsy_entry_footer' ) ) :
 			}
 		}
 
-		if ( ! isbitsyingle() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
 			comments_popup_link(
 				sprintf(
