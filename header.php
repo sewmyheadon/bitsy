@@ -21,7 +21,7 @@
 
 <body id="top" <?php body_class(); ?>>
 
-	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a> -->
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a>
 	<header id="header">
 		<?php
 			if ( is_front_page() || is_home() ) : ?>

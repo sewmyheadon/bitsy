@@ -6,7 +6,7 @@
  *
  * @package bitsy
  */
-
+?>
 <section class="error-404 not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'bitsy' ); ?></h1>
@@ -20,8 +20,6 @@
 
 			the_widget( 'WP_Widget_Recent_Posts' );
 
-			// Only show the widget if site has multiple categories.
-			if ( bitsy_categorized_blog() ) :
 		?>
 
 		<div class="widget widget_categories">
@@ -40,8 +38,6 @@
 		</div><!-- .widget -->
 
 		<?php
-			endif;
-
 			/* translators: %1$s: smiley */
 			$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'bitsy' ), convert_smilies( ':)' ) ) . '</p>';
 			the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );

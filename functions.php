@@ -106,8 +106,20 @@ function bitsy_setup() {
 	 */
 	//add_editor_style( array( 'css/editor-style.css', bitsy_fonts_url() ) );
 
-	// Indicate widget sidebars can use selective refresh in the Customizer.
+	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	/**
+	 * Add support for core custom logo.
+	 *
+	 * @link https://codex.wordpress.org/Theme_Logo
+	 */
+	add_theme_support( 'custom-logo', array(
+		'height'      => 250,
+		'width'       => 250,
+		'flex-width'  => true,
+		'flex-height' => true,
+	) );
 }
 endif; // bitsy_setup
 add_action( 'after_setup_theme', 'bitsy_setup' );
@@ -187,4 +199,13 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
