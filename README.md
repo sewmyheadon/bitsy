@@ -11,8 +11,6 @@
 
 bitsy is a slim, optimized starter theme based on skel.io and underscores.me.
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
-
 ## Description ##
 
 bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/), [Skel](http://skel.io/), and [Baseline](https://github.com/ajlkn/baseline) with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).

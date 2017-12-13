@@ -5,7 +5,7 @@ Theme URI: https://github.com/sewmyheadon/bitsy
 Author: Eric Amundson
 Author URI: https://ivycat.com
 Description: A lightweight theme based on underscores.me and skel.io
-Version: 0.9.5
+Version: 0.9.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bitsy
@@ -1574,7 +1574,7 @@ body {
   }
 }
 body {
-  background: #fff;
+  background: #f1f1f1;
 }
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   -moz-animation: none !important;
@@ -5270,7 +5270,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #f1f1f1;
   -ms-overflow-style: scrollbar;
 }
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -5684,7 +5684,7 @@ button:disabled,
 .button:disabled {
   background-color: #444 !important;
   box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
-  color: #fff !important;
+  color: #f1f1f1 !important;
   cursor: default;
   opacity: 0.25;
 }

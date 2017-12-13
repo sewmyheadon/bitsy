@@ -61,7 +61,7 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 == Changelog ==
 
-= 0.9.6 - Nov 25 2017 =
+= 0.9.6 - Dec 10 2017 =
 * Update readme files to document Grunt.
 
 = 0.9.5 - Nov 24 2017 =
