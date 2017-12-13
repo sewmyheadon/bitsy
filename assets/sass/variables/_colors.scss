@@ -1,5 +1,3 @@
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
@@ -19,39 +17,79 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-
 // Below defs are from Skel. Must consolidate.
 
-// Palette.
-	$palette: (
-		bg:					#fff,
-		fg:					#444,
-		fg-bold:			#555,
-		fg-light:			#bbb,
-		border:				rgba(144,144,144,0.25),
-		border-bg:			rgba(144,144,144,0.075),
-		border2:			rgba(144,144,144,0.5),
-		border2-bg:			rgba(144,144,144,0.2),
 
-		accent1: (
-			bg:				#5AA6ED,
-			fg:				mix(#5AA6ED, #ffffff, 25%),
-			fg-bold:		#ffffff,
-			fg-light:		mix(#5AA6ED, #ffffff, 40%),
-			border:			rgba(255,255,255,0.25),
-			border-bg:		rgba(255,255,255,0.075),
-			border2:		rgba(255,255,255,0.5),
-			border2-bg:		rgba(255,255,255,0.2)
+// Base colors
+
+$base: #123456;
+$light-shade: #123456;
+$light-accent: #123456;
+$dark-shade: #123456;
+$dark-accent: #123456;
+$black: #000;
+
+// Palette.
+$palette: (
+
+		light-shade: (
+				base: $light-shade,
+				light: tint( $base, 20% ),
+				dark: shade( $base, 20% ),
+		),
+		light-accent: (
+				base: $light-accent,
+				light: tint( $base, 20% ),
+				dark: shade( $base, 20% ),
+		),
+		brand-primary: (
+				base: $base,
+				light: tint( $base, 20% ),
+				dark: shade( $base, 20% ),
+		),
+		dark-accent: (
+				base: $dark-accent,
+				light: tint( $base, 20% ),
+				dark: shade( $base, 20% ),
+		),
+		dark-shade: (
+				base: $dark-shade,
+				light: tint( $base, 20% ),
+				dark: shade( $base, 20% ),
+		),
+		grey: (
+			100:
 		),
 
+
+		bg: #f1f1f1,
+		fg: #444,
+		fg-bold: #555,
+		fg-light: #bbb,
+		border: rgba(144, 144, 144, 0.25),
+		border-bg: rgba(144, 144, 144, 0.075),
+		border2: rgba(144, 144, 144, 0.5),
+		border2-bg: rgba(144, 144, 144, 0.2),
+
+
+		accent1: (
+				bg: #5AA6ED,
+				fg: mix(#5AA6ED, #ffffff, 25%),
+				fg-bold: #ffffff,
+				fg-light: mix(#5AA6ED, #ffffff, 40%),
+				border: rgba(255, 255, 255, 0.25),
+				border-bg: rgba(255, 255, 255, 0.075),
+				border2: rgba(255, 255, 255, 0.5),
+				border2-bg: rgba(255, 255, 255, 0.2)
+		),
 		accent2: (
-			bg:				#5a5a5a,
-			fg:				mix(#5a5a5a, #ffffff, 25%),
-			fg-bold:		#ffffff,
-			fg-light:		mix(#5a5a5a, #ffffff, 40%),
-			border:			rgba(255,255,255,0.15),
-			border-bg:		rgba(255,255,255,0.075),
-			border2:		rgba(255,255,255,0.5),
-			border2-bg:		rgba(255,255,255,0.2)
+				bg: #5a5a5a,
+				fg: mix(#5a5a5a, #ffffff, 25%),
+				fg-bold: #ffffff,
+				fg-light: mix(#5a5a5a, #ffffff, 40%),
+				border: rgba(255, 255, 255, 0.15),
+				border-bg: rgba(255, 255, 255, 0.075),
+				border2: rgba(255, 255, 255, 0.5),
+				border2-bg: rgba(255, 255, 255, 0.2)
 		)
-	);
+);
