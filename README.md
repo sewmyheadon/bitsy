@@ -61,7 +61,12 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 ## Changelog ##
 
-### 0.9.6 - Nov 25 2017 ###
+### 0.9.7 - Dec 17 2017 ###
+* Streamline color definitions and variables
+* Update header font sizing
+* Fix footer class call
+
+### 0.9.6 - Dec 10 2017 ###
 * Update readme files to document Grunt.
 
 ### 0.9.5 - Nov 24 2017 ###
@@ -80,11 +85,12 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 ### 0.8 - Nov 5 2016 ###
 * Initial release
 
+## Code Quality ##
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
+
 ## Credits ##
 
 * Skel http://skel.io/, (C) 2016 skel.io, [MIT](https://opensource.org/licenses/MIT)
 * Baseline https://github.com/ajlkn/baseline, (C) 2016 n33, [MIT](https://opensource.org/licenses/MIT)
 * Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
-
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
