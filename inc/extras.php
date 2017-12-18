@@ -51,13 +51,14 @@ add_filter( 'body_class', 'bitsy_body_classes' );
  *
  * @return array
  */
-add_action( 'bitsy_footer_class', 'bitsy_output_footer_class' );
 function bitsy_output_footer_class() {
 	// Adds a class of alt to home and landing pages.
 	if ( is_front_page() ) {
 		echo 'alt';
 	}
 }
+
+add_action( 'bitsy_footer_class', 'bitsy_output_footer_class' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
