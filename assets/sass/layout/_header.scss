@@ -24,16 +24,19 @@
 			color: _palette(light-shade, base);
 			display: inline-block;
 			height: inherit;
+			font-size:2em;
 			left: 1.25em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
 			top: 0;
-
+			.site-title a {
+				font-size: 1em !important;
+			}
 			a {
 				font-weight:normal;
-				font-size: 1.25em;
+				//font-size: 1.25em;
 				color: inherit;
 				text-decoration: none;
 			}
