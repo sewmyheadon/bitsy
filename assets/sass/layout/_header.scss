@@ -7,8 +7,8 @@
 	}
 
 	#header {
-		background: darken(_palette(accent2, bg), 12);
-		color: _palette(accent2, fg);
+		background: _palette(dark-shade, base);
+		color: _palette(grey, 100);
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -21,7 +21,7 @@
 
 		> h1,
 		> p {
-			color: _palette(accent2, fg-bold);
+			color: _palette(light-shade, base);
 			display: inline-block;
 			height: inherit;
 			left: 1.25em;
@@ -47,7 +47,7 @@
 			text-decoration: none;
 
 			&:hover {
-				color: _palette(accent2, fg-bold);
+				color: _palette(dark-accent, light);
 			}
 
 			&[href="#nav"] {
@@ -60,7 +60,7 @@
 			}
 
 			& + a[href="#nav"]:last-child {
-				border-left: solid 1px _palette(accent2, border);
+				border-left: solid 1px _palette(grey, 700);
 				padding-left: 1.25em;
 				margin-left: 0.5em;
 			}

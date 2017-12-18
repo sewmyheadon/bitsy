@@ -7,14 +7,14 @@
 		background: #f2f2f2;
 
 		.copyright {
-			color: _palette(fg-light);
+			color: _palette(light-accent, base);
 			font-size: 0.9em;
 			margin: _size(element-margin) 0 0;
 			padding: 0;
 			text-align: center;
 
 			li {
-				border-left: solid _size(border-width) _palette(border);
+				border-left: solid _size(border-width) _palette(grey,300);
 				display: inline-block;
 				list-style: none;
 				margin-left: 1.5em;

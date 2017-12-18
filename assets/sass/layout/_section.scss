@@ -10,7 +10,7 @@ section, article {
 
 header {
 	p {
-		color: _palette(fg-light);
+		color: _palette(light-accent, base);
 		position: relative;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 	}

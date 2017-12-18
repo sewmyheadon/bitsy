@@ -11,12 +11,12 @@
 
 		tbody {
 			tr {
-				border: solid _size(border-width) _palette(border);
+				border: solid _size(border-width) _palette(grey,300);
 				border-left: 0;
 				border-right: 0;
 
 				&:nth-child(2n + 1) {
-					background-color: _palette(border-bg);
+					background-color: _palette(grey, 700);
 				}
 			}
 		}
@@ -26,7 +26,7 @@
 		}
 
 		th {
-			color: _palette(fg-bold);
+			color: _palette(dark-shade, base);
 			font-size: 0.9em;
 			font-weight: _font(weight-bold);
 			padding: 0 0.75em 0.75em 0.75em;
@@ -34,11 +34,11 @@
 		}
 
 		thead {
-			border-bottom: solid (_size(border-width) * 2) _palette(border);
+			border-bottom: solid (_size(border-width) * 2) _palette(grey,300);
 		}
 
 		tfoot {
-			border-top: solid (_size(border-width) * 2) _palette(border);
+			border-top: solid (_size(border-width) * 2) _palette(grey,300);
 		}
 
 		&.alt {
@@ -47,7 +47,7 @@
 			tbody {
 				tr {
 					td {
-						border: solid _size(border-width) _palette(border);
+						border: solid _size(border-width) _palette(grey,300);
 						border-left-width: 0;
 						border-top-width: 0;
 

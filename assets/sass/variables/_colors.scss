@@ -17,16 +17,12 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-// Below defs are from Skel. Must consolidate.
-
-
 // Base colors
-
-$base: #123456;
-$light-shade: #123456;
-$light-accent: #123456;
-$dark-shade: #123456;
-$dark-accent: #123456;
+$light-shade: #F6FAFB;  // Catskill White
+$light-accent: #C4B1AC; // Silk
+$base: #E03B33;         // Cinnabar
+$dark-accent: #F4A017;  // Fuel Yellow
+$dark-shade: #252C41;   // Ebony Clay
 $black: #000;
 
 // Palette.
@@ -34,13 +30,13 @@ $palette: (
 
 		light-shade: (
 				base: $light-shade,
-				light: tint( $base, 20% ),
-				dark: shade( $base, 20% ),
+				light: tint( $light-shade, 20% ),
+				dark: shade( $light-shade, 20% ),
 		),
 		light-accent: (
 				base: $light-accent,
-				light: tint( $base, 20% ),
-				dark: shade( $base, 20% ),
+				light: tint( $light-accent, 20% ),
+				dark: shade( $light-accent, 20% ),
 		),
 		brand-primary: (
 				base: $base,
@@ -49,47 +45,23 @@ $palette: (
 		),
 		dark-accent: (
 				base: $dark-accent,
-				light: tint( $base, 20% ),
-				dark: shade( $base, 20% ),
+				light: tint( $dark-accent, 20% ),
+				dark: shade( $dark-accent, 20% ),
 		),
 		dark-shade: (
 				base: $dark-shade,
-				light: tint( $base, 20% ),
-				dark: shade( $base, 20% ),
+				light: tint( $dark-shade, 20% ),
+				dark: shade( $dark-shade, 20% ),
 		),
 		grey: (
-			100:
+			100: #f5f5f5, // HTML WhiteSmoke
+			200: #DCDCDC, // HTML Gainsboro
+			300: #D3D3D3, // HTML LightGray
+			400: #C0C0C0, // HTML Silver
+			500: #A9A9A9, // HTML DarkGray (Yep, it's really lighter than Gray)
+			600: #808080, // HTML Gray
+			700: #606060,
+			800: #404040,
+			900: #202020,
 		),
-
-
-		bg: #f1f1f1,
-		fg: #444,
-		fg-bold: #555,
-		fg-light: #bbb,
-		border: rgba(144, 144, 144, 0.25),
-		border-bg: rgba(144, 144, 144, 0.075),
-		border2: rgba(144, 144, 144, 0.5),
-		border2-bg: rgba(144, 144, 144, 0.2),
-
-
-		accent1: (
-				bg: #5AA6ED,
-				fg: mix(#5AA6ED, #ffffff, 25%),
-				fg-bold: #ffffff,
-				fg-light: mix(#5AA6ED, #ffffff, 40%),
-				border: rgba(255, 255, 255, 0.25),
-				border-bg: rgba(255, 255, 255, 0.075),
-				border2: rgba(255, 255, 255, 0.5),
-				border2-bg: rgba(255, 255, 255, 0.2)
-		),
-		accent2: (
-				bg: #5a5a5a,
-				fg: mix(#5a5a5a, #ffffff, 25%),
-				fg-bold: #ffffff,
-				fg-light: mix(#5a5a5a, #ffffff, 40%),
-				border: rgba(255, 255, 255, 0.15),
-				border-bg: rgba(255, 255, 255, 0.075),
-				border2: rgba(255, 255, 255, 0.5),
-				border2-bg: rgba(255, 255, 255, 0.2)
-		)
 );

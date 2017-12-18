@@ -14,7 +14,7 @@ html {
 }
 
 body {
-		background: _palette(bg);
+		background: _palette(light-shade, base);
 		-ms-overflow-style: scrollbar;
 		// Prevents animation/transition "flicker" on page load.
 		// Automatically added/removed by js/main.js.

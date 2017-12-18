@@ -7,7 +7,7 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: _palette(dark-shade, base);
 		display: block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
@@ -22,10 +22,10 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		background: _palette(grey, 700);
 		border-radius: _size(border-radius);
 		border: none;
-		border: solid _size(border-width) _palette(border);
+		border: solid _size(border-width) _palette(grey,300);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -38,8 +38,8 @@
 		}
 
 		&:focus {
-			border-color: _palette(accent1, bg);
-			box-shadow: 0 0 0 _size(border-width) _palette(accent1, bg);
+			border-color: _palette(light-accent, base);
+			box-shadow: 0 0 0 _size(border-width) _palette(light-accent, base);
 		}
 	}
 
@@ -49,7 +49,7 @@
 		position: relative;
 
 		&:before {
-			color: _palette(border);
+			color: _palette(grey,300);
 			display: block;
 			height: _size(element-height);
 			line-height: _size(element-height);
@@ -89,7 +89,7 @@
 
 		& + label {
 			@include icon;
-			color: _palette(fg);
+			color: _palette(grey, 700);;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -99,9 +99,9 @@
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				background: _palette(grey, 700);
 				border-radius: _size(border-radius);
-				border: solid _size(border-width) _palette(border);
+				border: solid _size(border-width) _palette(grey,300);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
@@ -116,17 +116,17 @@
 
 		&:checked + label {
 			&:before {
-				background: _palette(accent2, bg);
-				border-color: _palette(accent2, bg);
-				color: _palette(accent2, fg-bold);
+				background: _palette(brand-primary, base);
+				border-color: _palette(brand-primary, base);
+				color: _palette(dark-accent, light);
 				content: '\f00c';
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(accent1, bg);
-				box-shadow: 0 0 0 _size(border-width) _palette(accent1, bg);
+				border-color: _palette(light-accent, base);
+				box-shadow: 0 0 0 _size(border-width) _palette(light-accent, base);
 			}
 		}
 	}
@@ -148,26 +148,26 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(light-accent, base) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(light-accent, base) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(light-accent, base) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(light-accent, base) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(light-accent, base) !important;
 		opacity: 1.0;
 	}

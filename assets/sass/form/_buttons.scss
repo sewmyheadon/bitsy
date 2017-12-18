@@ -9,10 +9,10 @@
 	.button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
-		background-color: _palette(accent2, bg);
+		background-color: _palette(brand-primary, base);
 		border-radius: _size(border-radius);
 		border: 0;
-		color: _palette(accent2, fg-bold) !important;
+		color: _palette(grey, 100) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight-bold);
@@ -24,11 +24,11 @@
 		white-space: nowrap;
 
 		&:hover {
-			background-color: lighten(_palette(accent2, bg), 5);
+			background-color: _palette(brand-primary, light);
 		}
 
 		&:active {
-			background-color: darken(_palette(accent2, bg), 5);
+			background-color: darken(_palette(brand-primary, base), 5);
 		}
 
 		&.icon {
@@ -55,42 +55,42 @@
 
 		&.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 (_size(border-width) * 2) _palette(border);
-			color: _palette(fg-bold) !important;
+			box-shadow: inset 0 0 0 (_size(border-width) * 2) _palette(grey,300);
+			color: _palette(grey,500) !important;
 
 			&:hover {
-				background-color: _palette(border-bg);
+				background-color: _palette(grey, 700);
 			}
 
 			&:active {
-				background-color: _palette(border2-bg);
+				background-color: _palette(grey, 800);;
 			}
 
 			&.icon {
 				&:before {
-					color: _palette(fg-light);
+					color: _palette(light-accent, base);
 				}
 			}
 		}
 
 		&.special {
-			background-color: _palette(accent1, bg);
-			color: _palette(accent1, fg-bold) !important;
+			background-color: _palette(light-accent, base);
+			color: _palette(grey, 100) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent1, bg), 5);
+				background-color: lighten(_palette(light-accent, base), 5);
 			}
 
 			&:active {
-				background-color: darken(_palette(accent1, bg), 5);
+				background-color: darken(_palette(light-accent, base), 5);
 			}
 		}
 
 		&.disabled,
 		&:disabled {
-			background-color: _palette(fg) !important;
+			background-color: _palette(grey, 700) !important;
 			box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
-			color: _palette(bg) !important;
+			color: _palette(grey, 100) !important;
 			cursor: default;
 			opacity: 0.25;
 		}

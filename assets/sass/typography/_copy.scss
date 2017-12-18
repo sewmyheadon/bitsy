@@ -2,7 +2,7 @@
 /* Type */
 
 body, input, select, textarea {
-	color: _palette(fg);
+	color: _palette(grey, 700);;
 	font-family: _font(family);
 	font-size: 13pt;
 	font-weight: _font(weight);
@@ -30,7 +30,7 @@ body, input, select, textarea {
 }
 
 a {
-	color: _palette(accent1, bg);
+	color: _palette(light-accent, base);
 	text-decoration: underline;
 
 	&:hover {
@@ -39,7 +39,7 @@ a {
 }
 
 strong, b {
-	color: _palette(fg-bold);
+	color: _palette(dark-shade, base);
 	font-weight: _font(weight-bold);
 }
 
@@ -72,16 +72,17 @@ big {
 }
 
 blockquote {
-	border-left: solid (_size(border-width) * 4) _palette(border);
+	border-left: solid (_size(border-width) * 4) _palette(grey,300);
 	font-style: italic;
 	margin: 0 0 _size(element-margin) 0;
 	padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
 }
 
 code {
-	background: _palette(border-bg);
+	background: _palette(dark-shade, base);
+	color: _palette(light-shade, base);
 	border-radius: _size(border-radius);
-	border: solid _size(border-width) _palette(border);
+	//border: solid _size(border-width) _palette(grey,300);
 	font-family: _font(family-fixed);
 	font-size: 0.9em;
 	margin: 0 0.25em;
@@ -108,7 +109,7 @@ address {
 
 hr {
 	border: 0;
-	border-bottom: solid _size(border-width) _palette(border);
+	border-bottom: solid _size(border-width) _palette(grey,300);
 	margin: _size(element-margin) 0;
 
 	&.major {
