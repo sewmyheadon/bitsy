@@ -1,31 +1,24 @@
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
-
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
-
 // Base colors
-$light-shade: #F6FAFB;  // Catskill White
-$light-accent: #C4B1AC; // Silk
-$base: #E03B33;         // Cinnabar
-$dark-accent: #F4A017;  // Fuel Yellow
-$dark-shade: #252C41;   // Ebony Clay
-$black: #000;
+$light-shade:	#F6FAFB !default;	// Catskill White
+$light-accent:	#C4B1AC !default;	// Silk
+$base:			#E03B33 !default;	// Cinnabar
+$dark-accent:	#F4A017 !default;	// Fuel Yellow
+$dark-shade:	#252C41 !default;	// Ebony Clay
 
-// Palette.
+// Greys
+$white:			#fff;
+$grey-100:		#f8f9fa; 
+$grey-200:		#e9ecef;
+$grey-300:		#dee2e6;
+$grey-400:		#ced4da;
+$grey-500:		#adb5bd;
+$grey-600:		#868e96;
+$grey-700:		#495057;
+$grey-800:		#343a40;
+$grey-900:		#212529;
+$black:			#000;
+
+// Palette
 $palette: (
 		light-shade: (
 				base: $light-shade,
@@ -64,3 +57,23 @@ $palette: (
 			900: #212529,
 		),
 );
+
+$color__background-hr: $grey-400;
+$color__background-button: $grey-200;
+$color__background-pre:  $grey-200;
+$color__background-ins: $light-accent;
+
+$color__text-main: $dark-shade;
+$color__text-screen: #21759b;
+$color__text-input: $grey-700;
+$color__text-input-focus: $grey-900;
+
+$color__link: $base;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+$color__border-button: $grey-300 $grey-300 $grey-500;
+$color__border-button-hover: $grey-300 $grey-500 $grey-400;
+$color__border-button-focus: $grey-400 $grey-500 $grey-500;
+$color__border-input: $grey-400;
+$color__border-abbr: $grey-700;

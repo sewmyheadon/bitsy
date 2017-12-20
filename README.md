@@ -4,8 +4,8 @@
 **Tags:** translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, performance optimized  
 
 **Requires at least:** 4.0  
-**Tested up to:** 4.9.0  
-**Stable tag:** 0.9.6  
+**Tested up to:** 4.9.1  
+**Stable tag:** 0.9.8  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -60,6 +60,9 @@ bitsy currently includes support for:
 Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in the [bitsy GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 ## Changelog ##
+
+### 0.9.8 - Dec 19 2017 ###
+* More color streamlining
 
 ### 0.9.7 - Dec 17 2017 ###
 * Streamline color definitions and variables

@@ -1664,7 +1664,7 @@ body {
 
 #header {
   background: #252C41;
-  color: #f5f5f5;
+  color: #f8f9fa;
   cursor: default;
   height: 3.25em;
   left: 0;
@@ -1728,7 +1728,7 @@ body {
   margin: 0 0.5em 0 0;
 }
 #header > a + a[href="#nav"]:last-child {
-  border-left: solid 1px #606060;
+  border-left: solid 1px #495057;
   padding-left: 1.25em;
   margin-left: 0.5em;
 }
@@ -1782,7 +1782,7 @@ body {
   text-align: center;
 }
 #footer .copyright li {
-  border-left: solid 1px #D3D3D3;
+  border-left: solid 1px #dee2e6;
   display: inline-block;
   list-style: none;
   margin-left: 1.5em;
@@ -1894,7 +1894,7 @@ header h6 + p {
 # Navigation
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #E03B33;
 }
 a:visited {
   color: purple;
@@ -1946,7 +1946,7 @@ a:hover, a:active {
 }
 #nav > ul.links > li > a:not(.button) {
   border: 0;
-  border-top: solid 1px #D3D3D3;
+  border-top: solid 1px #dee2e6;
   color: #F4A017;
   display: block;
   line-height: 3.5em;
@@ -2023,7 +2023,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #252C41;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -2128,7 +2128,7 @@ h6 {
 
 /* Type */
 body, input, select, textarea {
-  color: #606060;
+  color: #495057;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13pt;
   font-weight: normal;
@@ -2202,7 +2202,7 @@ big {
 }
 
 blockquote {
-  border-left: solid 4px #D3D3D3;
+  border-left: solid 4px #dee2e6;
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em;
@@ -2237,7 +2237,7 @@ address {
 
 hr {
   border: 0;
-  border-bottom: solid 1px #D3D3D3;
+  border-bottom: solid 1px #dee2e6;
   margin: 2em 0;
 }
 hr.major {
@@ -2245,12 +2245,12 @@ hr.major {
 }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted #495057;
   cursor: help;
 }
 
 mark, ins {
-  background: #fff9c0;
+  background: #C4B1AC;
   text-decoration: none;
 }
 
@@ -5360,7 +5360,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 hr {
-  background-color: #ccc;
+  background-color: #ced4da;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -5389,7 +5389,7 @@ ul.alt {
   padding-left: 0;
 }
 ul.alt li {
-  border-top: solid 1px #D3D3D3;
+  border-top: solid 1px #dee2e6;
   padding: 0.5em 0;
 }
 ul.alt li:first-child {
@@ -5527,12 +5527,12 @@ table {
   width: 100%;
 }
 table tbody tr {
-  border: solid 1px #D3D3D3;
+  border: solid 1px #dee2e6;
   border-left: 0;
   border-right: 0;
 }
 table tbody tr:nth-child(2n + 1) {
-  background-color: #606060;
+  background-color: #495057;
 }
 table td {
   padding: 0.75em 0.75em;
@@ -5545,16 +5545,16 @@ table th {
   text-align: left;
 }
 table thead {
-  border-bottom: solid 2px #D3D3D3;
+  border-bottom: solid 2px #dee2e6;
 }
 table tfoot {
-  border-top: solid 2px #D3D3D3;
+  border-top: solid 2px #dee2e6;
 }
 table.alt {
   border-collapse: separate;
 }
 table.alt tbody tr td {
-  border: solid 1px #D3D3D3;
+  border: solid 1px #dee2e6;
   border-left-width: 0;
   border-top-width: 0;
 }
@@ -5574,7 +5574,7 @@ table.alt tfoot {
 /* Box */
 .box {
   border-radius: 4px;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #dee2e6;
   margin-bottom: 2em;
   padding: 1.5em;
 }
@@ -5627,7 +5627,7 @@ button,
   background-color: #E03B33;
   border-radius: 4px;
   border: 0;
-  color: #f5f5f5 !important;
+  color: #f8f9fa !important;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -5695,22 +5695,22 @@ input[type="button"].alt,
 button.alt,
 .button.alt {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #D3D3D3;
-  color: #A9A9A9 !important;
+  box-shadow: inset 0 0 0 2px #dee2e6;
+  color: #adb5bd !important;
 }
 input[type="submit"].alt:hover,
 input[type="reset"].alt:hover,
 input[type="button"].alt:hover,
 button.alt:hover,
 .button.alt:hover {
-  background-color: #606060;
+  background-color: #495057;
 }
 input[type="submit"].alt:active,
 input[type="reset"].alt:active,
 input[type="button"].alt:active,
 button.alt:active,
 .button.alt:active {
-  background-color: #404040;
+  background-color: #343a40;
 }
 input[type="submit"].alt.icon:before,
 input[type="reset"].alt.icon:before,
@@ -5725,7 +5725,7 @@ input[type="button"].special,
 button.special,
 .button.special {
   background-color: #C4B1AC;
-  color: #f5f5f5 !important;
+  color: #f8f9fa !important;
 }
 input[type="submit"].special:hover,
 input[type="reset"].special:hover,
@@ -5750,9 +5750,9 @@ button.disabled,
 button:disabled,
 .button.disabled,
 .button:disabled {
-  background-color: #606060 !important;
+  background-color: #495057 !important;
   box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
-  color: #f5f5f5 !important;
+  color: #f8f9fa !important;
   cursor: default;
   opacity: 0.25;
 }
@@ -5790,10 +5790,10 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #606060;
+  background: #495057;
   border-radius: 4px;
   border: none;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #dee2e6;
   color: inherit;
   display: block;
   outline: 0;
@@ -5836,7 +5836,7 @@ textarea:focus {
   text-transform: none !important;
 }
 .select-wrapper:before {
-  color: #D3D3D3;
+  color: #dee2e6;
   display: block;
   height: 2.75em;
   line-height: 2.75em;
@@ -5878,7 +5878,7 @@ input[type="radio"] {
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   text-decoration: none;
-  color: #606060;
+  color: #495057;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -5898,9 +5898,9 @@ input[type="radio"] + label:before {
 }
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-  background: #606060;
+  background: #495057;
   border-radius: 4px;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #dee2e6;
   content: '';
   display: inline-block;
   height: 1.65em;

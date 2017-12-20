@@ -12,12 +12,11 @@
     "Sass"
   ],
   "author": "IvyCat",
-  "person":{ 
-    "name" : "Eric Amundson",
-    "email" : "eric@ivycat.com",
-    "url" : "https://ivycat.com/"
+  "person": {
+    "name": "Eric Amundson",
+    "email": "eric@ivycat.com",
+    "url": "https://ivycat.com/"
   },
-
   "devDependencies": {
     "grunt": "^1.0.0",
     "grunt-autoprefixer": "^3.0.4",
