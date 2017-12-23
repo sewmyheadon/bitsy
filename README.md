@@ -5,17 +5,17 @@
 
 **Requires at least:** 4.0  
 **Tested up to:** 4.9.1  
-**Stable tag:** 0.9.8  
+**Stable tag:** 0.9.7  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-bitsy is a slim, optimized starter theme based on skel.io and underscores.me.
+Bitsy is a slim, optimized starter theme based on skel.io and underscores.me.
 
 ## Description ##
 
-bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/), [Skel](http://skel.io/), and [Baseline](https://github.com/ajlkn/baseline) with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Bitsy is a simple, optimized starter theme based on [underscores](http://underscores.me/), [Skel](http://skel.io/), and [Baseline](https://github.com/ajlkn/baseline) with a cool theme wrapper to keep your code warm and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
-bitsy includes support for Grunt to help you compile and optimize SASS, JS, update your readme.md file, and more.
+Bitsy includes support for Grunt to help you compile and optimize SASS, JS, update your readme.md file, and more.
 
 ## Installation ##
 
@@ -26,9 +26,9 @@ Either upload the zip file through the WordPress Admin, or use git to clone the 
 3. Click Activate to use your new theme right away.
 
 ### Development
-Since bitsy is a starter theme, chances are you're going to continue theme development using bitsy as a basis.
+Since Bitsy is a starter theme, chances are you're going to continue theme development using Bitsy as a basis.
 
-While you don't have to use it, bitsy's all set up with Grunt to do the following:
+While you don't have to use it, Bitsy's all set up with Grunt to do the following:
 - Compile SASS using Compass
 - Test our JS
 - Concatenate JS
@@ -50,24 +50,16 @@ To learn and be lean.
 
 ### Does this theme support any plugins? ###
 
-bitsy currently includes support for:
+Bitsy currently includes support for:
 
 - Infinite Scroll in Jetpack.
 - WooCommerce
 
 ### Can I contribute? ###
 
-Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in the [bitsy GitHub repo](https://github.com/sewmyheadon/bitsy).
+Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in [Bitsy's GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 ## Changelog ##
-
-### 0.9.8 - Dec 19 2017 ###
-* More color streamlining
-
-### 0.9.7 - Dec 17 2017 ###
-* Streamline color definitions and variables
-* Update header font sizing
-* Fix footer class call
 
 ### 0.9.6 - Dec 10 2017 ###
 * Update readme files to document Grunt.
@@ -87,9 +79,6 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 ### 0.8 - Nov 5 2016 ###
 * Initial release
-
-## Code Quality ##
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
 
 ## Credits ##
 
