@@ -25,13 +25,13 @@ if ( ! function_exists( 'bitsy_posted_on' ) ) :
 		);
 
 		$posted_on = sprintf(
-			/* translators: %s: post date. */
+		/* translators: %s: post date. */
 			esc_html_x( 'Posted on %s', 'post date', 'bitsy' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
 		$byline = sprintf(
-			/* translators: %s: post author. */
+		/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'bitsy' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
@@ -68,7 +68,7 @@ if ( ! function_exists( 'bitsy_entry_footer' ) ) :
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-						/* translators: %s: post title */
+					/* translators: %s: post title */
 						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'bitsy' ),
 						array(
 							'span' => array(
@@ -85,7 +85,7 @@ if ( ! function_exists( 'bitsy_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+				/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Edit <span class="screen-reader-text">%s</span>', 'bitsy' ),
 					array(
 						'span' => array(
@@ -243,7 +243,7 @@ if ( ! function_exists( 'bitsy_sidebar_classes' ) ) {
 	 *      <div class="<?php bitsy_sidebar_classes(); ?>">
 	 */
 	function bitsy_sidebar_classes() {
-//		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
+		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
 		$html = '';
 
 		if ( is_page_template( 'page-templates/both-sidebars.php' ) && ( is_active_sidebar( 'left-sidebar' ) ) && is_active_sidebar( 'right-sidebar' ) ) {
@@ -253,8 +253,14 @@ if ( ! function_exists( 'bitsy_sidebar_classes' ) ) {
 		           ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) ) {
 			$html .= '4u 12u(small) widget-area';
 			echo $html; // WPCS: XSS OK.
+		} elseif ( ( 'right' === $sidebar_position || 'left' === $sidebar_position ) && ( is_active_sidebar( 'right-sidebar' ) || is_active_sidebar( 'left-sidebar' ) ) ) {
+			$html .= '4u 12u(small) content-area';
+			echo $html; // WPCS: XSS OK.
+		} elseif ( ( 'both' === $sidebar_position ) && ( is_active_sidebar( 'right-sidebar' ) && is_active_sidebar( 'left-sidebar' ) ) ) {
+			$html .= '3u 12u(small) content-area';
+			echo $html; // WPCS: XSS OK.
 		} else {
-			$html .= '4u 12u(small) widget-area';
+			$html .= '12u widget-area';
 			echo $html; // WPCS: XSS OK.
 		}
 	}
