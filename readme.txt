@@ -90,6 +90,10 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 = 0.8 - Nov 5 2016 =
 * Initial release
 
+== Code Quality ==
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
+
 == Credits ==
 
 * Skel http://skel.io/, (C) 2016 skel.io, [MIT](https://opensource.org/licenses/MIT)

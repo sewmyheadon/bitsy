@@ -5,7 +5,7 @@
 
 **Requires at least:** 4.0  
 **Tested up to:** 4.9.1  
-**Stable tag:** 0.9.7  
+**Stable tag:** 0.9.9  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -60,7 +60,17 @@ Bitsy currently includes support for:
 Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in [Bitsy's GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 ## Changelog ##
-
+### 0.9.9 - Dec 23 2017
+* Add margin top when logged in to clear admin bar
+###
+### 0.9.8 - Dec 19 2017
+* More color streamlining
+###
+### 0.9.7 - Dec 17 2017
+* Streamline color definitions and variables
+* Update header font sizing
+* Fix footer class call
+###
 ### 0.9.6 - Dec 10 2017 ###
 * Update readme files to document Grunt.
 
@@ -79,6 +89,10 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 ### 0.8 - Nov 5 2016 ###
 * Initial release
+
+## Code Quality ##
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
 
 ## Credits ##
 
