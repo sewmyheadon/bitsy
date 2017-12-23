@@ -1587,12 +1587,12 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   transition: none !important;
 }
 
-body.logged-in header {
+body.logged-in #header {
   margin-top: 32px;
 }
 
 @media screen and (max-width: 782px) {
-  body.logged-in header {
+  body.logged-in #header {
     margin-top: 46px;
   }
 }
@@ -1684,6 +1684,13 @@ body {
   width: 100%;
   z-index: 10001;
 }
+#header .site-description {
+  position: absolute;
+  font-style: italic;
+  left: 230px;
+  top: 6px;
+  height: 38px;
+}
 #header > h1,
 #header > p {
   color: #F6FAFB;
@@ -1771,6 +1778,11 @@ body {
   }
   #header > h1 a {
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 736px) {
+  .site-description {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {

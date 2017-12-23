@@ -141,35 +141,12 @@ add_action( 'after_setup_theme', 'bitsy_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function bitsy_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'bitsy' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'bitsy' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'bitsy_widgets_init' );
+require get_template_directory() . '/inc/widgets.php';
 
 /**
  * Enqueue scripts and styles.
  */
-function bitsy_scripts() {	
-
-	wp_enqueue_script( 'bitsy-vendorjs', get_template_directory_uri() . '/assets/js/build/vendor.min.js', array(), '20151215', true );
-	wp_enqueue_style( 'bitsy-style', get_stylesheet_directory_uri().'/style.css' );
-	wp_enqueue_script( 'bitsy-navigation', get_template_directory_uri() . '/assets/js/source/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'bitsy-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/source/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script( 'bitsy-js', get_template_directory_uri() . '/assets/js/build/bitsy.min.js', array('jquery'), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'bitsy_scripts' );
+require get_template_directory() . '/inc/enqueue.php';
 
 /**
  * Load the theme wrapper.

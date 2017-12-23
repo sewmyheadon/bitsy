@@ -100,3 +100,167 @@ if ( ! function_exists( 'bitsy_entry_footer' ) ) :
 		);
 	}
 endif;
+
+/**
+ * Returns true if a blog has more than 1 category.
+ *
+ * @return bool
+ */
+function bitsy_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'bitsy_categories' ) ) ) {
+		// Create an array of all the categories that are attached to posts.
+		$all_the_cool_cats = get_categories( array(
+			'fields'     => 'ids',
+			'hide_empty' => 1,
+			// We only need to know if there is more than one category.
+			'number'     => 2,
+		) );
+		// Count the number of categories that are attached to the posts.
+		$all_the_cool_cats = count( $all_the_cool_cats );
+		set_transient( 'bitsy_categories', $all_the_cool_cats );
+	}
+	if ( $all_the_cool_cats > 1 ) {
+		// This blog has more than 1 category so components_categorized_blog should return true.
+		return true;
+	} else {
+		// This blog has only 1 category so components_categorized_blog should return false.
+		return false;
+	}
+}
+
+/**
+ * Flush out the transients used in bitsy_categorized_blog.
+ */
+function bitsy_category_transient_flusher() {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	// Like, beat it. Dig?
+	delete_transient( 'bitsy_categories' );
+}
+
+add_action( 'edit_category', 'bitsy_category_transient_flusher' );
+add_action( 'save_post', 'bitsy_category_transient_flusher' );
+
+/**
+ * Left sidebar loading logic
+ */
+if ( ! function_exists( 'bitsy_left_sidebar' ) ) {
+
+	function bitsy_left_sidebar() {
+		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
+
+		if ( ! is_page_template( 'page-templates/full-width.php' ) ) {
+			if ( is_page_template( 'page-templates/left-sidebar.php' ) || is_page_template( 'page-templates/both-sidebars.php' ) || 'left' === $sidebar_position || 'both' === $sidebar_position ) {
+				get_sidebar( 'left' );
+			}
+		}
+	}
+
+}
+
+/**
+ * Right sidebar loading logic
+ */
+if ( ! function_exists( 'bitsy_right_sidebar' ) ) {
+
+	function bitsy_right_sidebar() {
+		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
+
+		if ( ! is_page_template( 'page-templates/full-width.php' ) ) {
+			if ( is_page_template( 'page-templates/right-sidebar.php' ) || is_page_template( 'page-templates/both-sidebars.php' ) || 'right' === $sidebar_position || 'both' === $sidebar_position ) {
+				get_sidebar( 'right' );
+			}
+		}
+	}
+
+}
+
+/**
+ * Content classes loading logic
+ */
+if ( ! function_exists( 'bitsy_content_classes' ) ) {
+
+	/**
+	 * Prints classes for content area div depending on active sidebars.
+	 *
+	 * Usage add this function between the class quotes like so
+	 *      <div class="<?php bitsy_content_classes(); ?>" id="primary">
+	 */
+	function bitsy_content_classes() {
+		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
+		$html             = '';
+
+		if ( is_page_template( 'page-templates/left-sidebar.php' ) && is_active_sidebar( 'left-sidebar' ) ) {
+			$html .= 'left-sidebar-template 8u content-area';
+			echo $html; // WPCS: XSS OK.
+
+		} elseif ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) {
+			$html .= 'right-sidebar-template 8u content-area';
+			echo $html; // WPCS: XSS OK.
+
+		} elseif ( is_page_template( 'page-templates/both-sidebars.php' ) && ( is_active_sidebar( 'left-sidebar' ) ) && is_active_sidebar( 'right-sidebar' ) ) {
+			$html .= 'both-sidebar-template 6u content-area';
+			echo $html; // WPCS: XSS OK.
+
+		} elseif ( is_page_template( 'page-templates/full-width.php' ) ) {
+			$html .= 'full-width-template 12u content-area';
+			echo $html; // WPCS: XSS OK.
+
+		} elseif ( 'right' === $sidebar_position || 'left' === $sidebar_position ) {
+
+			if ( is_active_sidebar( 'right-sidebar' ) || is_active_sidebar( 'left-sidebar' ) ) {
+				$html .= '8u content-area';
+			} else {
+				$html .= '12u content-area';
+			}
+			echo $html; // WPCS: XSS OK.
+
+		} elseif ( is_active_sidebar( 'right-sidebar' ) && is_active_sidebar( 'left-sidebar' ) ) {
+			$html = '';
+			if ( 'both' === $sidebar_position ) {
+				$html .= '6u content-area';
+			} else {
+				$html .= '12u content-area';
+			}
+			echo $html; // WPCS: XSS OK.
+
+		} else {
+			echo '12u content-area';
+		}
+	}
+}
+
+/**
+ * Sidebar classes
+ */
+if ( ! function_exists( 'bitsy_sidebar_classes' ) ) {
+
+	/**
+	 * Prints classes for sidebars area div depending on active sidebars.
+	 *
+	 * Add this function between the class quotes like so
+	 *      <div class="<?php bitsy_sidebar_classes(); ?>">
+	 */
+	function bitsy_sidebar_classes() {
+//		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
+		$html = '';
+
+		if ( is_page_template( 'page-templates/both-sidebars.php' ) && ( is_active_sidebar( 'left-sidebar' ) ) && is_active_sidebar( 'right-sidebar' ) ) {
+			$html .= '3u widget-area';
+			echo $html; // WPCS: XSS OK.
+		} elseif ( ( is_page_template( 'page-templates/left-sidebar.php' ) && is_active_sidebar( 'left-sidebar' ) ) ||
+		           ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) ) {
+			$html .= '4u widget-area';
+			echo $html; // WPCS: XSS OK.
+		} else {
+			$html .= '4u widget-area';
+			echo $html; // WPCS: XSS OK.
+		}
+	}
+
+}
+
+
+
+

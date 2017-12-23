@@ -19,6 +19,14 @@
 		width: 100%;
 		z-index: _misc(z-index-base) + 1;
 
+		.site-description {
+			position: absolute;
+			font-style: italic;
+			left: 230px;
+			top: 6px;
+			height: 38px;
+		}
+
 		> h1,
 		> p {
 			color: _palette(light-shade, base);
@@ -105,9 +113,13 @@
 			}
 		}
 	}
-
-	@include breakpoint(xsmall) {
-		#header {
-			min-width: 320px;
-		}
+@include breakpoint(small) {
+	.site-description {
+		display:  none;
 	}
+}
+@include breakpoint(xsmall) {
+	#header {
+		min-width: 320px;
+	}
+}

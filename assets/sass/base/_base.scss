@@ -4,41 +4,42 @@
 
 // MSIE: Required for IEMobile.
 @-ms-viewport {
-	width: device-width;
+  width: device-width;
 }
 
 // MSIE: Prevents scrollbar from overlapping content.
 body {
-	-ms-overflow-style: scrollbar;
+  -ms-overflow-style: scrollbar;
 }
 
 // Ensures page width is always >=320px.
 @include breakpoint(xsmall) {
-	html, body {
-		min-width: 320px;
-	}
+  html, body {
+    min-width: 320px;
+  }
 }
 
 body {
-	background: _palette(light-shade, base);
+  background: _palette(light-shade, base);
 
-	// Prevents animation/transition "flicker" on page load.
-	// Automatically added/removed by js/main.js.
-	&.is-loading {
-		*, *:before, *:after {
-			@include vendor('animation', 'none !important');
-			@include vendor('transition', 'none !important');
-		}
-	}
+  // Prevents animation/transition "flicker" on page load.
+  // Automatically added/removed by js/main.js.
+  &.is-loading {
+    *, *:before, *:after {
+      @include vendor('animation', 'none !important');
+      @include vendor('transition', 'none !important');
+    }
+  }
 
 }
 
 // Make header clear admin bar when logged in to WordPress
-body.logged-in header {
-	margin-top: 32px;
+body.logged-in #header {
+  margin-top: 32px;
 }
-@media screen and ( max-width: 782px ) {
-	body.logged-in header {
-		margin-top: 46px;
-	}
+
+@media screen and (max-width: 782px) {
+  body.logged-in #header {
+    margin-top: 46px;
+  }
 }
