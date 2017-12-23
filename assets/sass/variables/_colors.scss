@@ -1,7 +1,7 @@
 // Base colors
 $light-shade:	#F6FAFB !default;	// Catskill White
 $light-accent:	#C4B1AC !default;	// Silk
-$base:			#E03B33 !default;	// Cinnabar
+$brand-primary:	#E03B33 !default;	// Cinnabar
 $dark-accent:	#F4A017 !default;	// Fuel Yellow
 $dark-shade:	#252C41 !default;	// Ebony Clay
 
@@ -23,7 +23,7 @@ $palette: (
 		light-shade: (
 				base: $light-shade,
 				light: tint( $light-shade, 20% ),
-				dark: shade( $light-shade, 20% ),
+				dark: darken( $light-shade, 20% ),
 		),
 		light-accent: (
 				base: $light-accent,
@@ -31,19 +31,19 @@ $palette: (
 				dark: shade( $light-accent, 20% ),
 		),
 		brand-primary: (
-				base: $base,
-				light: tint( $base, 20% ),
-				dark: shade( $base, 20% ),
+				base: $brand-primary,
+				light: lighten( $brand-primary, 20% ),
+				dark: shade( $brand-primary, 20% ),
 		),
 		dark-accent: (
 				base: $dark-accent,
-				light: tint( $dark-accent, 20% ),
-				dark: shade( $dark-accent, 20% ),
+				light: lighten( $dark-accent, 20% ),
+				dark: darken( $dark-accent, 20% ),
 		),
 		dark-shade: (
 				base: $dark-shade,
-				light: tint( $dark-shade, 20% ),
-				dark: shade( $dark-shade, 20% ),
+				light: lighten( $dark-shade, 20% ),
+				dark: darken( $dark-shade, 20% ),
 		),
 		grey: (
 			100: #f8f9fa, 
@@ -64,13 +64,13 @@ $color__background-pre:  $grey-200;
 $color__background-ins: $light-accent;
 
 $color__text-main: $dark-shade;
-$color__text-screen: #21759b;
+$color__text-screen: $dark-shade;
 $color__text-input: $grey-700;
 $color__text-input-focus: $grey-900;
 
-$color__link: $base;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: $dark-accent;
+$color__link-visited: lighten( $dark-accent, 20% );
+$color__link-hover: $brand-primary;
 
 $color__border-button: $grey-300 $grey-300 $grey-500;
 $color__border-button-hover: $grey-300 $grey-500 $grey-400;
