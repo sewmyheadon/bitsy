@@ -192,15 +192,15 @@ if ( ! function_exists( 'bitsy_content_classes' ) ) {
 		$html             = '';
 
 		if ( is_page_template( 'page-templates/left-sidebar.php' ) && is_active_sidebar( 'left-sidebar' ) ) {
-			$html .= 'left-sidebar-template 8u content-area';
+			$html .= 'left-sidebar-template 8u 12u(small) content-area';
 			echo $html; // WPCS: XSS OK.
 
 		} elseif ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) {
-			$html .= 'right-sidebar-template 8u content-area';
+			$html .= 'right-sidebar-template 8u 12u(small) content-area';
 			echo $html; // WPCS: XSS OK.
 
 		} elseif ( is_page_template( 'page-templates/both-sidebars.php' ) && ( is_active_sidebar( 'left-sidebar' ) ) && is_active_sidebar( 'right-sidebar' ) ) {
-			$html .= 'both-sidebar-template 6u content-area';
+			$html .= 'both-sidebar-template 6u 12u(small) content-area';
 			echo $html; // WPCS: XSS OK.
 
 		} elseif ( is_page_template( 'page-templates/full-width.php' ) ) {
@@ -210,7 +210,7 @@ if ( ! function_exists( 'bitsy_content_classes' ) ) {
 		} elseif ( 'right' === $sidebar_position || 'left' === $sidebar_position ) {
 
 			if ( is_active_sidebar( 'right-sidebar' ) || is_active_sidebar( 'left-sidebar' ) ) {
-				$html .= '8u content-area';
+				$html .= '8u 12u(small) content-area';
 			} else {
 				$html .= '12u content-area';
 			}
@@ -219,7 +219,7 @@ if ( ! function_exists( 'bitsy_content_classes' ) ) {
 		} elseif ( is_active_sidebar( 'right-sidebar' ) && is_active_sidebar( 'left-sidebar' ) ) {
 			$html = '';
 			if ( 'both' === $sidebar_position ) {
-				$html .= '6u content-area';
+				$html .= '6u 12u(small) content-area';
 			} else {
 				$html .= '12u content-area';
 			}
@@ -247,14 +247,14 @@ if ( ! function_exists( 'bitsy_sidebar_classes' ) ) {
 		$html = '';
 
 		if ( is_page_template( 'page-templates/both-sidebars.php' ) && ( is_active_sidebar( 'left-sidebar' ) ) && is_active_sidebar( 'right-sidebar' ) ) {
-			$html .= '3u widget-area';
+			$html .= '3u 12u(small) widget-area';
 			echo $html; // WPCS: XSS OK.
 		} elseif ( ( is_page_template( 'page-templates/left-sidebar.php' ) && is_active_sidebar( 'left-sidebar' ) ) ||
 		           ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) ) {
-			$html .= '4u widget-area';
+			$html .= '4u 12u(small) widget-area';
 			echo $html; // WPCS: XSS OK.
 		} else {
-			$html .= '4u widget-area';
+			$html .= '4u 12u(small) widget-area';
 			echo $html; // WPCS: XSS OK.
 		}
 	}
