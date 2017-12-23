@@ -1587,6 +1587,15 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   transition: none !important;
 }
 
+body.logged-in header {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.logged-in header {
+    margin-top: 46px;
+  }
+}
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -1709,7 +1718,7 @@ body {
   text-decoration: none;
 }
 #header > a:hover {
-  color: #f6b345;
+  color: #f9c878;
 }
 #header > a[href="#nav"] {
   text-decoration: none;
@@ -1894,13 +1903,13 @@ header h6 + p {
 # Navigation
 --------------------------------------------------------------*/
 a {
-  color: #E03B33;
+  color: #F4A017;
 }
 a:visited {
-  color: purple;
+  color: #f9c878;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #E03B33;
 }
 a:focus {
   outline: thin dotted;
@@ -1993,7 +2002,7 @@ a:hover, a:active {
   font-size: 1.25em;
 }
 #nav .close:hover {
-  color: #f6b345;
+  color: #f9c878;
 }
 @media screen and (max-width: 736px) {
   #nav .close {
@@ -2031,7 +2040,7 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #515667;
+  color: #4a5882;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 1em 0;
@@ -2161,7 +2170,6 @@ body, input, select, textarea {
 }
 
 a {
-  color: #C4B1AC;
   text-decoration: underline;
 }
 a:hover {
@@ -5643,7 +5651,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #e6625c;
+  background-color: #ed908c;
 }
 input[type="submit"]:active,
 input[type="reset"]:active,
@@ -5915,7 +5923,7 @@ input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background: #E03B33;
   border-color: #E03B33;
-  color: #f6b345;
+  color: #f9c878;
   content: '\f00c';
 }
 input[type="checkbox"]:focus + label:before,
@@ -5973,7 +5981,7 @@ input[type="radio"] + label:before {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: #252C41;
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
