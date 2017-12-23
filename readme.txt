@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.9.1
-Stable tag: 0.9.9
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,14 @@ Bitsy currently includes support for:
 Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in [Bitsy's GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 == Changelog ==
+
+= 1.0.0 - Dec 23 2017
+* All decked out with new responsive sidebar templates and sidebar logic
+* Default sidebar settings available through Theme Customizer
+* Change page layout per-page using page templates: full width, left sidebar, right sidebar, left & right sidebars, and blank.
+* Remove Generator tags for WordPress and WooCommerce
+* Ignore PHPStorm project directory
+
 = 0.9.9 - Dec 23 2017
 * Add margin top when logged in to clear admin bar
 
