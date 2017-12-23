@@ -32,3 +32,13 @@ body {
 	}
 
 }
+
+// Make header clear admin bar when logged in to WordPress
+body.logged-in header {
+	margin-top: 32px;
+}
+@media screen and ( max-width: 782px ) {
+	body.logged-in header {
+		margin-top: 46px;
+	}
+}
