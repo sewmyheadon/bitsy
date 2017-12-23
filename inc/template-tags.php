@@ -119,7 +119,7 @@ function bitsy_categorized_blog() {
 		$all_the_cool_cats = count( $all_the_cool_cats );
 		set_transient( 'bitsy_categories', $all_the_cool_cats );
 	}
-	if ( $all_the_cool_cats > 1 ) {
+	if ( $all_the_cool_cats>1 ) {
 		// This blog has more than 1 category so components_categorized_blog should return true.
 		return true;
 	} else {
@@ -250,7 +250,7 @@ if ( ! function_exists( 'bitsy_sidebar_classes' ) ) {
 			$html .= '3u 12u(small) widget-area';
 			echo $html; // WPCS: XSS OK.
 		} elseif ( ( is_page_template( 'page-templates/left-sidebar.php' ) && is_active_sidebar( 'left-sidebar' ) ) ||
-		           ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) ) {
+				   ( is_page_template( 'page-templates/right-sidebar.php' ) && is_active_sidebar( 'right-sidebar' ) ) ) {
 			$html .= '4u 12u(small) widget-area';
 			echo $html; // WPCS: XSS OK.
 		} elseif ( ( 'right' === $sidebar_position || 'left' === $sidebar_position ) && ( is_active_sidebar( 'right-sidebar' ) || is_active_sidebar( 'left-sidebar' ) ) ) {
