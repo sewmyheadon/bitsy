@@ -49,6 +49,7 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
+.idea
 
 # ignore log files and databases
 *.log
@@ -81,3 +82,4 @@ node_modules/
 
 # ignore artwork directory
 artwork/
+
