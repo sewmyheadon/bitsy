@@ -13,14 +13,15 @@ if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 		// If loading from front page, consult $_wp_sidebars_widgets rather than options
 		// to see if wp_convert_widget_settings() has made manipulations in memory.
 		global $_wp_sidebars_widgets;
-		if ( empty( $_wp_sidebars_widgets ) ) {
-			$_wp_sidebars_widgets = get_option( 'sidebars_widgets', array() );
+		$_bitsy_sidebars_widgets = $_wp_sidebars_widgets;
+		if ( empty( $_bitsy_sidebars_widgets ) ) {
+			$_bitsy_sidebars_widgets = get_option( 'sidebars_widgets', array() );
 		}
-		$sidebars_widgets_count = $_wp_sidebars_widgets;
+		$sidebar_widget_count = $_bitsy_sidebars_widgets;
 
-		if ( isset( $sidebars_widgets_count[$sidebar_id] ) ) {
-			$widget_count   = count( $sidebars_widgets_count[$sidebar_id] );
-			$widget_classes = 'widget-count-' . count( $sidebars_widgets_count[$sidebar_id] );
+		if ( isset( $sidebar_widget_count[$sidebar_id] ) ) {
+			$widget_count   = count( $sidebar_widget_count[$sidebar_id] );
+			$widget_classes = 'widget-count-' . count( $sidebar_widget_count[$sidebar_id] );
 
 			if ( $widget_count >= 4 ) {
 				// Four or more widgets active
