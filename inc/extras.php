@@ -9,9 +9,9 @@
 /**
  * Adds custom classes to the array of header classes.
  *
- * @param array $classes Classes for the body element.
+ * @param string of classes for the header element.
  *
- * @return array
+ * @return string
  */
 add_action( 'bitsy_header_class', 'bitsy_output_header_class' );
 function bitsy_output_header_class() {
@@ -47,9 +47,9 @@ add_filter( 'body_class', 'bitsy_body_classes' );
 /**
  * Adds custom classes to the array of footer classes.
  *
- * @param array $classes Classes for the footer element.
+ * @param string of classes for the footer element.
  *
- * @return array
+ * @return string
  */
 function bitsy_output_footer_class() {
 	// Adds a class of alt to home and landing pages.
@@ -73,8 +73,7 @@ add_action( 'wp_head', 'bitsy_pingback_header' );
 
 /**
  * Creating theme hooks
- */
-/**
+ *
  * Create header class hook
  */
 function bitsy_header_class() {

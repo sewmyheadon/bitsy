@@ -66,7 +66,7 @@ if ( ! function_exists( 'bitsy_theme_customize_register' ) ) {
 				$wp_customize,
 				'bitsy_container_type', array(
 					'label'       => __( 'Container Width', 'spurs' ),
-					'description' => __( "Use Bootstrap fixed or fluid container?", 'spurs' ),
+					'description' => __( 'Use Bootstrap fixed or fluid container?', 'spurs' ),
 					'section'     => 'bitsy_theme_layout_options',
 					'settings'    => 'bitsy_container_type',
 					'type'        => 'select',
@@ -90,9 +90,9 @@ if ( ! function_exists( 'bitsy_theme_customize_register' ) ) {
 				$wp_customize,
 				'bitsy_sidebar_position', array(
 					'label'             => __( 'Default Sidebar Position', 'spurs' ),
-					'description'       => __( "<b>Applies to all pages and posts.</b> <br />
+					'description'       => __( '<b>Applies to all pages and posts.</b> <br />
 												<b>Select:</b> right, left, both, or none. <br />
-												<b>Note:</b> you can override on individual pages.",
+												<b>Note:</b> you can override on individual pages.',
 						'spurs' ),
 					'section'           => 'bitsy_theme_layout_options',
 					'settings'          => 'bitsy_sidebar_position',
