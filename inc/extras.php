@@ -11,7 +11,7 @@
  *
  * @param string of classes for the header element.
  *
- * @return string
+ * @return string|null
  */
 add_action( 'bitsy_header_class', 'bitsy_output_header_class' );
 function bitsy_output_header_class() {
@@ -49,7 +49,7 @@ add_filter( 'body_class', 'bitsy_body_classes' );
  *
  * @param string of classes for the footer element.
  *
- * @return string
+ * @return string|null
  */
 function bitsy_output_footer_class() {
 	// Adds a class of alt to home and landing pages.
