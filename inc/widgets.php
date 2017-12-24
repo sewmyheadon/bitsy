@@ -13,11 +13,11 @@ if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 		// If loading from front page, consult $_wp_sidebars_widgets rather than options
 		// to see if wp_convert_widget_settings() has made manipulations in memory.
 		global $_wp_sidebars_widgets;
-		$_bitsy_sidebars_widgets = $_wp_sidebars_widgets;
-		if ( empty( $_bitsy_sidebars_widgets ) ) {
-			$_bitsy_sidebars_widgets = get_option( 'sidebars_widgets', array() );
+		$_bitsy_sb_widgets = $_wp_sidebars_widgets;
+		if ( empty( $_bitsy_sb_widgets ) ) {
+			$_bitsy_sb_widgets = get_option( 'sidebars_widgets', array() );
 		}
-		$sidebar_widget_count = $_bitsy_sidebars_widgets;
+		$sidebar_widget_count = $_bitsy_sb_widgets;
 
 		if ( isset( $sidebar_widget_count[$sidebar_id] ) ) {
 			$widget_count   = count( $sidebar_widget_count[$sidebar_id] );
