@@ -5,8 +5,8 @@
  */
 
 /**
- * Count number of widgets in a sidebar
- * Used to add classes to widget areas so widgets can be displayed one, two, three or four per row
+ * Count number of widgets in a sidebar and add classes to widget areas
+ * so widgets can be displayed one, two, or three per row
  */
 if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 	function bitsy_slbd_count_widgets( $sidebar_id ) {
@@ -22,21 +22,18 @@ if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 			$widget_count   = count( $sidebars_widgets_count[ $sidebar_id ] );
 			$widget_classes = 'widget-count-' . count( $sidebars_widgets_count[ $sidebar_id ] );
 
-			if ( 0 == $widget_count % 4 || $widget_count > 6 ) {
-				// Four widgets per row if there are exactly four or more than six
-				$widget_classes .= ' col-md-3';
-			} elseif ( 6 == $widget_count ) {
-				// If two widgets are published
-				$widget_classes .= ' col-md-2';
-			} elseif ( $widget_count >= 3 ) {
-				// Three widgets per row if there's three or more widgets
-				$widget_classes .= ' col-md-4';
+			if ( $widget_count >= 4 ) {
+				// Four or more widgets active
+				$widget_classes .= ' 3u';
+			} elseif ( 3 == $widget_count ) {
+				// Three widgets active
+				$widget_classes .= ' 4u';
 			} elseif ( 2 == $widget_count ) {
-				// If two widgets are published
-				$widget_classes .= ' col-md-6';
+				// Two widgets active
+				$widget_classes .= ' 6u';
 			} elseif ( 1 == $widget_count ) {
-				// If just on widget is active
-				$widget_classes .= ' col-md-12';
+				// One widget active
+				$widget_classes .= ' 12u';
 			}
 
 			return $widget_classes;
@@ -49,6 +46,7 @@ if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 if ( ! function_exists( 'bitsy_widgets_init' ) ) {
 
 	function bitsy_widgets_init() {
+
 		register_sidebar( array(
 			'name'          => __( 'Right Sidebar', 'spurs' ),
 			'id'            => 'right-sidebar',
@@ -70,26 +68,6 @@ if ( ! function_exists( 'bitsy_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Hero Slider', 'spurs' ),
-			'id'            => 'hero',
-			'description'   => 'Hero slider area. Place two or more widgets here and they will slide!',
-			'before_widget' => '<div class="carousel-item">',
-			'after_widget'  => '</div>',
-			'before_title'  => '',
-			'after_title'   => '',
-		) );
-
-		register_sidebar( array(
-			'name'          => __( 'Hero Static', 'spurs' ),
-			'id'            => 'static-hero',
-			'description'   => 'Static Hero widget. no slider functionality',
-			'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s ' . bitsy_slbd_count_widgets( 'static-hero' ) . '">',
-			'after_widget'  => '</div><!-- .static-hero-widget -->',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		) );
-
-		register_sidebar( array(
 			'name'          => __( 'Footer Full', 'spurs' ),
 			'id'            => 'footer-full',
 			'description'   => 'Widget area below main content and above footer',
@@ -100,5 +78,5 @@ if ( ! function_exists( 'bitsy_widgets_init' ) ) {
 		) );
 
 	}
-} // endif function_exists( 'bitsy_widgets_init' ).
+}
 add_action( 'widgets_init', 'bitsy_widgets_init' );
