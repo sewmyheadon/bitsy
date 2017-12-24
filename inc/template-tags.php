@@ -7,7 +7,7 @@
  * @package bitsy
  */
 
-if ( ! function_exists( 'bitsy_posted_on' ) ) :
+if ( ! function_exists( 'bitsy_posted_on' ) ) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
@@ -39,9 +39,9 @@ if ( ! function_exists( 'bitsy_posted_on' ) ) :
 		echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 	}
-endif;
+}
 
-if ( ! function_exists( 'bitsy_entry_footer' ) ) :
+if ( ! function_exists( 'bitsy_entry_footer' ) ) {
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
@@ -99,7 +99,7 @@ if ( ! function_exists( 'bitsy_entry_footer' ) ) :
 			'</span>'
 		);
 	}
-endif;
+}
 
 /**
  * Returns true if a blog has more than 1 category.

@@ -19,9 +19,9 @@ if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 		}
 		$sidebar_widget_count = $_bitsy_sb_widgets;
 
-		if ( isset( $sidebar_widget_count[$sidebar_id] ) ) {
-			$widget_count   = count( $sidebar_widget_count[$sidebar_id] );
-			$widget_classes = 'widget-count-' . count( $sidebar_widget_count[$sidebar_id] );
+		if ( isset( $sidebar_widget_count[ $sidebar_id ] ) ) {
+			$widget_count   = count( $sidebar_widget_count[ $sidebar_id ] );
+			$widget_classes = 'widget-count-' . count( $sidebar_widget_count[ $sidebar_id ] );
 
 			if ( $widget_count >= 4 ) {
 				// Four or more widgets active
@@ -72,7 +72,7 @@ if ( ! function_exists( 'bitsy_widgets_init' ) ) {
 			'name'          => __( 'Footer Full', 'spurs' ),
 			'id'            => 'footer-full',
 			'description'   => 'Widget area below main content and above footer',
-			'before_widget' => '<div id="%1$s" class="footer-widget %2$s ' . bitsy_slbd_count_widgets( 'footer-full' ) . '">',
+			'before_widget' => '<div id="%1$s" class="footer-widget %2$s ' . esc_html( bitsy_slbd_count_widgets( 'footer-full' ) ) . '">',
 			'after_widget'  => '</div><!-- .footer-widget -->',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',

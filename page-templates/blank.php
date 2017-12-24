@@ -8,5 +8,5 @@
  */
 
 while ( have_posts() ) : the_post();
-	get_template_part( 'page/content', 'blank' );
+	get_template_part( '/components/page/content', 'blank' );
 endwhile; // end of the loop.
