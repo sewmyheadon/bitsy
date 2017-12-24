@@ -42,6 +42,6 @@
 
 	<?php get_template_part( 'components/navigation/navigation', 'primary' ); ?>
 
-	<?php if( is_front_page()) { get_template_part( 'components/header/banner', 'hero' ); } ?>
+	<?php if ( is_front_page() ) { get_template_part( 'components/header/banner', 'hero' ); } ?>
 
 	<div id="main" class="site-content container <?php bitsy_content_class(); ?>" role="main">
