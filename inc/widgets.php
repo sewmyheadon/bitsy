@@ -18,9 +18,9 @@ if ( ! function_exists( 'bitsy_slbd_count_widgets' ) ) {
 		}
 		$sidebars_widgets_count = $_wp_sidebars_widgets;
 
-		if ( isset( $sidebars_widgets_count[ $sidebar_id ] ) ) {
-			$widget_count   = count( $sidebars_widgets_count[ $sidebar_id ] );
-			$widget_classes = 'widget-count-' . count( $sidebars_widgets_count[ $sidebar_id ] );
+		if ( isset( $sidebars_widgets_count[$sidebar_id] ) ) {
+			$widget_count   = count( $sidebars_widgets_count[$sidebar_id] );
+			$widget_classes = 'widget-count-' . count( $sidebars_widgets_count[$sidebar_id] );
 
 			if ( $widget_count >= 4 ) {
 				// Four or more widgets active
