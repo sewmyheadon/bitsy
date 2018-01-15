@@ -3,14 +3,16 @@
 /* Footer */
 
 	#footer {
-		@include padding(4em, 0);
+		@include padding(3em, 0);
 		background: #f2f2f2;
 
 		.copyright {
 			color: _palette(light-accent, base);
-			font-size: 0.9em;
-			margin: _size(element-margin) 0 0;
-			padding: 0;
+			font-size: 0.5628em; /* 11.256px */
+			line-height: 2.6652em; /* 30px */
+			margin-top: 2.6652em;
+			margin-bottom: 0;
+			//padding: 0;
 			text-align: center;
 
 			li {

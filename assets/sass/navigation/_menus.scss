@@ -36,7 +36,7 @@
 						color: _palette(dark-accent, base);
 						display: block;
 						letter-spacing: _size(letter-spacing-alt);
-						line-height: 3.5em;
+						line-height: 2.95em;
 						text-decoration: none;
 					}
 
@@ -96,3 +96,7 @@
 			padding: 2.5em 1.75em;
 		}
 	}
+
+body.logged-in #nav {
+	top:32px;
+}

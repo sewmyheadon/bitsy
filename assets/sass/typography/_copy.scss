@@ -3,29 +3,29 @@
 body, input, select, textarea {
 	color: _palette(grey, 700);
 	font-family: _font(family);
-	font-size: 13pt;
+	font-size: 20px;
 	font-weight: _font(weight);
-	line-height: 1.65;
+	line-height: 1.5;
 
-	@include breakpoint(xlarge) {
-		font-size: 11pt;
-	}
-
-	@include breakpoint(large) {
-		font-size: 11pt;
-	}
-
-	@include breakpoint(medium) {
-		font-size: 12pt;
-	}
-
-	@include breakpoint(small) {
-		font-size: 12pt;
-	}
-
-	@include breakpoint(xsmall) {
-		font-size: 12pt;
-	}
+	//@include breakpoint(xlarge) {
+	//	font-size: 11pt;
+	//}
+	//
+	//@include breakpoint(large) {
+	//	font-size: 11pt;
+	//}
+	//
+	//@include breakpoint(medium) {
+	//	font-size: 12pt;
+	//}
+	//
+	//@include breakpoint(small) {
+	//	font-size: 12pt;
+	//}
+	//
+	//@include breakpoint(xsmall) {
+	//	font-size: 12pt;
+	//}
 }
 
 a {
@@ -46,7 +46,9 @@ em, i {
 }
 
 p {
-	margin: 0 0 _size(element-margin) 0;
+	font-size: 1em; /* 20px */
+	line-height: 1.5em; /* 30px */
+	margin: 0 0 1.5em 0;
 }
 
 dfn, cite, em, i {
@@ -54,26 +56,34 @@ dfn, cite, em, i {
 }
 
 sub {
-	font-size: 0.8em;
+	font-size: 0.75em;
 	position: relative;
 	top: 0.5em;
+	line-height: 1;
 }
 
 sup {
-	font-size: 0.8em;
+	font-size: 0.75em;
 	position: relative;
 	top: -0.5em;
+	line-height: 1;
 }
 
 big {
 	font-size: 125%;
+	line-height: 1;
 }
 
 blockquote {
 	border-left: solid (_size(border-width) * 4) _palette(grey,300);
 	font-style: italic;
-	margin: 0 0 _size(element-margin) 0;
-	padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
+	//margin: 0 0 _size(element-margin) 0;
+	//padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
+	padding: .75em 1em;
+	margin-bottom: 1.5em;
+	p {
+		margin: .75em 0 .75em 0;
+	}
 }
 
 code {
@@ -85,19 +95,21 @@ code {
 	font-size: 0.9em;
 	margin: 0 0.25em;
 	padding: 0.25em 0.65em;
+	line-height: 1;
 }
 
 pre {
 	-webkit-overflow-scrolling: touch;
 	font-family: _font(family-fixed);
 	font-size: 0.9em;
+	line-height: 1.7;
 	margin: 0 0 _size(element-margin) 0;
 
 	code, kbd, tt, var {
 		display: block;
-		line-height: 1.75;
 		padding: 1em 1.5em;
 		overflow-x: auto;
+		line-height: 1;
 	}
 }
 
@@ -117,6 +129,7 @@ hr {
 
 abbr, acronym {
 	border-bottom: 1px dotted $color__border-abbr;
+	text-decoration: none;
 	cursor: help;
 }
 

@@ -6,30 +6,30 @@
 	}
 
 	table {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 1.5em 0;
 		width: 100%;
 
 		tbody {
 			tr {
-				border: solid _size(border-width) _palette(grey,300);
+				border-bottom: solid 1px _palette(grey,500);
 				border-left: 0;
 				border-right: 0;
 
 				&:nth-child(2n + 1) {
-					background-color: _palette(grey, 700);
+					background-color: _palette(grey, 300);
 				}
 			}
 		}
 
 		td {
-			padding: 0.75em 0.75em;
+			padding: 0.75em 0.75em 0.7em;
 		}
 
 		th {
 			color: _palette(dark-shade, base);
-			font-size: 0.9em;
+			//font-size: 0.9em;
 			font-weight: _font(weight-bold);
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 0.75em 0.75em 0.7em;
 			text-align: left;
 		}
 

@@ -3,16 +3,16 @@
 /* Header */
 
 	body {
-		padding-top: 3.125em;
+		padding-top: 3em;
 	}
 
 	#header {
 		background: _palette(dark-shade, base);
 		color: _palette(grey, 100);
 		cursor: default;
-		height: 3.25em;
+		height: 3em;
 		left: 0;
-		line-height: 3.25em;
+		line-height: 3em;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -22,9 +22,10 @@
 		.site-description {
 			position: absolute;
 			font-style: italic;
-			left: 230px;
-			top: 6px;
-			height: 38px;
+			left: 14em;
+			top: .3em;
+			//height: 38px;
+			font-size: 0.7500em
 		}
 
 		> h1,
@@ -32,7 +33,7 @@
 			color: _palette(light-shade, base);
 			display: inline-block;
 			height: inherit;
-			font-size:2em;
+			font-size:1.3334em;
 			left: 1.25em;
 			line-height: inherit;
 			margin: 0;
@@ -74,6 +75,7 @@
 				border-left: solid 1px _palette(grey, 700);
 				padding-left: 1.25em;
 				margin-left: 0.5em;
+				line-height: 1;
 			}
 
 			&:last-child {
@@ -101,8 +103,8 @@
 		}
 
 		#header {
-			height: 44px;
-			line-height: 44px;
+			//height: 44px;
+			//line-height: 44px;
 
 			> h1 {
 				left: 1em;

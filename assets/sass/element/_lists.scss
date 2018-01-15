@@ -6,7 +6,9 @@
 		list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1.25em;
-
+		ol {
+			margin-bottom: 0;
+		}
 		li {
 			padding-left: 0.25em;
 		}
@@ -16,7 +18,9 @@
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
-
+		ul {
+			margin-bottom: 0;
+		}
 		li {
 			padding-left: 0.5em;
 		}
@@ -168,12 +172,12 @@
 	}
 
 	dl {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 1.5em 0;
 
 		dt {
 			display: block;
 			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			margin: 0;
 		}
 
 		dd {
