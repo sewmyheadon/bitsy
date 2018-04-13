@@ -107,3 +107,11 @@ function woocommerce_support() {
  */
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wc_generator_tag' );
+
+register_default_headers( array(
+	'smoke' => array(
+		'url'           => '%s/assets/images/fedora_smoke.jpg',
+		'thumbnail_url' => '%s/assets/images/fedora_smoke.jpg',
+		'description'   => __( 'Smoke', 'bitsy' )
+	)
+) );
