@@ -4,7 +4,7 @@
 **Tags:** translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, performance optimized  
 
 **Requires at least:** 4.0  
-**Tested up to:** 4.9.4  
+**Tested up to:** 4.9.5  
 **Stable tag:** 1.0.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
@@ -63,7 +63,7 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 ### 1.0.1 - April 11 2018
 * Bug fix: sidebar logic fixed so page templates always outrank site-wide defaults
 * Enhancement: Increase font size and tune font vertical rhythm.
-
+* Enhancement: Add custom header image capability with default.
 ###
 ### 1.0.0 - Dec 23 2017
 * All decked out with new responsive sidebar templates and sidebar logic
