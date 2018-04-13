@@ -40,7 +40,13 @@
 		<?php wp_loginout(); ?>
 		<a href="#nav">Menu</a>
 	</header><!-- #header -->
-
+	<?php if ( get_header_image() ) { ?>
+        <div id="site-header">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="custom-header-image">
+            </a>
+        </div>
+	<?php } ?>
 	<?php get_template_part( 'components/navigation/navigation', 'primary' ); ?>
 
 	<?php if ( is_front_page() ) { get_template_part( 'components/header/banner', 'hero' ); } ?>
