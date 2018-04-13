@@ -105,70 +105,70 @@ body {
 
 .container.\31 25\25 {
   width: 100%;
-  max-width: 100em;
-  min-width: 80em;
+  max-width: 75em;
+  min-width: 60em;
 }
 
 .container.\37 5\25 {
-  width: 60em;
+  width: 45em;
 }
 
 .container.\35 0\25 {
-  width: 40em;
+  width: 30em;
 }
 
 .container.\32 5\25 {
-  width: 20em;
+  width: 15em;
 }
 
 .container {
-  width: 80em;
+  width: 60em;
 }
 
 @media screen and (max-width: 1680px) {
   .container.\31 25\25 {
     width: 100%;
-    max-width: 100em;
-    min-width: 80em;
+    max-width: 75em;
+    min-width: 60em;
   }
 
   .container.\37 5\25 {
-    width: 60em;
+    width: 45em;
   }
 
   .container.\35 0\25 {
-    width: 40em;
+    width: 30em;
   }
 
   .container.\32 5\25 {
-    width: 20em;
+    width: 15em;
   }
 
   .container {
-    width: 80em;
+    width: 60em;
   }
 }
 @media screen and (max-width: 1280px) {
   .container.\31 25\25 {
     width: 100%;
-    max-width: 81.25em;
-    min-width: 65em;
+    max-width: 60em;
+    min-width: 48em;
   }
 
   .container.\37 5\25 {
-    width: 48.75em;
+    width: 36em;
   }
 
   .container.\35 0\25 {
-    width: 32.5em;
+    width: 24em;
   }
 
   .container.\32 5\25 {
-    width: 16.25em;
+    width: 12em;
   }
 
   .container {
-    width: 65em;
+    width: 48em;
   }
 }
 @media screen and (max-width: 980px) {
