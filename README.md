@@ -4,8 +4,8 @@
 **Tags:** translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, performance optimized  
 
 **Requires at least:** 4.0  
-**Tested up to:** 4.9.1  
-**Stable tag:** 1.0.0  
+**Tested up to:** 4.9.4  
+**Stable tag:** 1.0.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -28,7 +28,7 @@ Either upload the zip file through the WordPress Admin, or use git to clone the 
 ### Development
 Since Bitsy is a starter theme, chances are you're going to continue theme development using Bitsy as a basis.
 
-While you don't have to use it, Bitsy's all set up with Grunt to do the following:
+While you don't have to use it, Bitsy is all set up with Grunt to do the following:
 - Compile SASS using Compass
 - Test our JS
 - Concatenate JS
@@ -60,7 +60,11 @@ Bitsy currently includes support for:
 Absolutely! Please feel free to contribute comments, suggestions, pull requests, dark chocolate, or bug reports in [Bitsy's GitHub repo](https://github.com/sewmyheadon/bitsy).
 
 ## Changelog ##
+### 1.0.1 - April 11 2018
+* Bug fix: sidebar logic fixed so page templates always outrank site-wide defaults
+* Enhancement: Increase font size and tune font vertical rhythm.
 
+###
 ### 1.0.0 - Dec 23 2017
 * All decked out with new responsive sidebar templates and sidebar logic
 * Default sidebar settings available through Theme Customizer
@@ -100,7 +104,7 @@ Absolutely! Please feel free to contribute comments, suggestions, pull requests,
 
 ## Code Quality ##
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev) [![Analytics](https://ga-beacon.appspot.com/UA-111251480-1/bitsy?flat)](https://github.com/sewmyheadon/bitsy)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/?branch=dev) [![Build Status](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/badges/build.png?b=dev)](https://scrutinizer-ci.com/g/sewmyheadon/bitsy/build-status/dev)
 
 ## Credits ##
 
