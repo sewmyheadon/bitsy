@@ -23,27 +23,5 @@
 <body id="top" <?php body_class(); ?>>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bitsy' ); ?></a>
-	<header id="header" class="<?php bitsy_header_class(); ?>">
-
-        <?php
-			if ( is_front_page() || is_home() ) { ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<?php } else { ?>
-                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                                         rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			} ?>
-		<?php $description = get_bloginfo( 'description', 'display' );
-		if ( $description || is_customize_preview() ) { ?>
-			<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
-		<?php
-		} ?>
-		<?php wp_loginout(); ?>
-		<a href="#nav">Menu</a>
-	</header><!-- #header -->
-
-	<?php get_template_part( 'components/navigation/navigation', 'primary' ); ?>
-
-	<?php if ( is_front_page() ) { get_template_part( 'components/header/banner', 'hero' ); } ?>
 
 	<div id="main" class="site-content container <?php bitsy_content_class(); ?>" role="main">

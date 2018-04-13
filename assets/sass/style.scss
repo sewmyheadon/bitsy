@@ -65,11 +65,11 @@ Thanks also to:
 @include skel-layout((
 	reset: 'full',
 	boxModel: 'border',
-	containers: 80em,
+	containers: 60em,
 	grid: ( gutters: 2em ),
 	breakpoints: (
 		large: (
-			containers: 65em,
+			containers: 48em,
 			grid: ( gutters: 1.5em )
 		),
 		medium: (

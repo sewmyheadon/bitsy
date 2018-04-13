@@ -13,16 +13,6 @@
 
 	</div><!-- #main -->
 
-	<footer id="footer" class="site-footer <?php bitsy_footer_class(); ?>" role="contentinfo">
-		<div class="container">
-
-			<?php get_template_part( 'components/footer/footer', 'widgets' ); ?>
-	
-			<?php get_template_part( 'components/footer/site', 'info' ); ?>
-
-		</div>
-	</footer><!-- #footer -->
-
 <?php wp_footer(); ?>
 
 </body>
