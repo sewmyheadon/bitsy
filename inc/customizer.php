@@ -66,7 +66,7 @@ if ( ! function_exists( 'bitsy_theme_customize_register' ) ) {
 				$wp_customize,
 				'bitsy_container_type', array(
 					'label'       => __( 'Container Width', 'spurs' ),
-					'description' => __( 'Use Bootstrap fixed or fluid container?', 'spurs' ),
+					'description' => __( 'Use fixed or fluid container?', 'spurs' ),
 					'section'     => 'bitsy_theme_layout_options',
 					'settings'    => 'bitsy_container_type',
 					'type'        => 'select',
