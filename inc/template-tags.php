@@ -167,8 +167,10 @@ if ( ! function_exists( 'bitsy_right_sidebar' ) ) {
 	function bitsy_right_sidebar() {
 		$sidebar_position = get_theme_mod( 'bitsy_sidebar_position' );
 
-		if ( ! is_page_template( 'page-templates/full-width.php' ) ) {
-			if ( is_page_template( 'page-templates/right-sidebar.php' ) || is_page_template( 'page-templates/both-sidebars.php' ) || 'right' === $sidebar_position || 'both' === $sidebar_position ) {
+		if ( ! is_page_template( 'page-templates/full-width.php' ) || ! is_page_template( 'page-templates/left-sidebar.php' ) ) {
+			if ( is_page_template( 'page-templates/right-sidebar.php' ) || is_page_template( 'page-templates/both-sidebars.php' ) ) {
+				get_sidebar( 'right' );
+			} elseif ( is_page_template( 'default' ) && ( 'right' === $sidebar_position || 'both' === $sidebar_position ) ) {
 				get_sidebar( 'right' );
 			}
 		}
